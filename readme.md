@@ -170,12 +170,20 @@ type NewObservation = {
 - Declared Strategy Merge
 - Common Merkle Clock
 
-## Shared timestamp via Merkle Clock
+## Coordination: Strategy as conditional actions
 
-## Authentication of real world data via HGTP
+## Coordination: Ask
 
-## Semantically computable representation of reference phrases via IEML
+## Coordination: Offer
 
-## Active inference for automatic world modelling
+## Coordination: Commit
 
-## Model-based reinforcement learning for strategy optimization
+## Decentralization: Shared timestamp via Merkle Clock
+
+## Decentralization: Authentication of real world data via HGTP
+
+## Decentralization: Semantically computable & interoperable representation of reference phrases via IEML
+
+## Machine learning: Active inference for automatic world modelling
+
+## Machine learning: Model-based reinforcement learning for strategy optimization
