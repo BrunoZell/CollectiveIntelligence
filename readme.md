@@ -157,7 +157,18 @@ type NewObservation = {
 }
 ```
 
-## Interpretation
+## Module: Observation Pool
 
-## Orientation
+## Module: Live Analysis
 
+## Module: Action Execution
+
+## Shared timestamp via Merkle Clock
+
+## Authentication of real world data via HGTP
+
+## Semantically computable representation of reference phrases via IEML
+
+## Active inference for automatic world modelling
+
+## Model-based reinforcement learning for strategy optimization
