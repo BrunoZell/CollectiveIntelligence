@@ -96,6 +96,67 @@ Each module comes with interface types used by semantic engineers to define doma
 
 Furthermore, each module can be hosted on a computer system, with the modules behavior being triggered by incoming messages. It may produce persistet data structures and emits messages to be routed to other module instances.
 
+## Module: Observer Group
+
+The module _Observer Group_ is responsible for observing the world and emitting according observations.
+
+### Domain-Interface
+
+_Observers_ define how new information is sourced from external systems. Implementations maintain the required network connections with external computer systems.
+
+_Observers_ are implemented via `Sdk.IObserver<'Percept>`, where `'Percept` is a domain-specific type that represents the newly observed information.
+
+```fsharp
+[<IsReadOnly; Struct>]
+type Observation<'Percept> = {
+    Percepts: 'Percept array
+}
+
+type IObserver<'Percept> =
+    abstract member Observations : IAsyncEnumerable<Observation<'Percept>>
+```
+
+An `Observation<'Percept>` represents an atomic appearance of sensory information. Atomic meaning that the observation appeared at a singular instant, the same point in time.
+
+It carries one or more _Percepts_, which is a typed representation of the newly observed information.
+
+### Behavior
+
+On initialization, the modules takes one or more `Sdk.IObserver<'Percept>`-instances of possibly different `'Percepts`, and starts pulling `Sdk.Observation<'Percept>` from all of them via member `Observations` and processes them sequentially in the order they appear:
+
+1. Capture current timestamp as of the _Runtime Clock_
+2. Serialize observation into `DataModel.CapturedObservation`
+3. Append new node the this modules _Observation Sequence_: `DataModel.ObservationSessionSequenceHead`
+4. Emit message `NewObservation` linking the newest `DataModel.ObservationSessionSequenceHead`.
+
+### Data Structure
+
+This module produces a linked list `DataModel.ObservationSequenceHead` containing all observations made during the runtime of the module. Every time a new observation is captured, a new node is added to the list, linking to the previous node.
+
+```fsharp
+type CapturedObservation = {
+    At: DateTime
+    PerceptType: System.Type
+    Observation: ContentId // Sdk.Observation<'Percept>
+}
+
+type ObservationSequenceHead =
+    | Beginning
+    | Happening of Node:ObservationSequenceNode
+and ObservationSequenceNode = {
+    Previous: ContentId<ObservationSequenceHead>
+    Observation: ContentId<CapturedObservation>
+}
+```
+
+### Messages
+
+```fsharp
+type NewObservation = {
+    LatestObservations: ContentId<ObservationSequenceHead>
+}
+```
+
 ## Interpretation
 
 ## Orientation
