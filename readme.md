@@ -170,7 +170,24 @@ type NewObservation = {
 - Declared Strategy Merge
 - Common Merkle Clock
 
+## Recap: Type hierarchy overview
+
 ## Coordination: Strategy as conditional actions
+
+On a technical level, a _Strategy_ is a pure function that maps a given situation to a _Decision_ about what to do in that moment.
+
+That computation takes as input:
+
+- a given _Scene_ that represents reality
+- a _Reflection_ of the strategies past decisions
+
+with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being accessed via `Sdk.IReflectionQueries`, where both interfaces represent an abstraction of the underlying data structures.
+
+Coordination is another abstraction layer on top of that strategy sandbox. It gives strategy definitions more structure:
+
+It explicitly represents an ordered list of conditional actions. Practically a big "if-else" statement which is executed top to bottom, with each case returning a `Sdk.Decision`.
+
+This structure allows to easily construct proposals to change a given strategy. Those proposals could define removals of conditional actions from the strategy, or additions of conditional actions to the strategy.
 
 ## Coordination: Ask
 
