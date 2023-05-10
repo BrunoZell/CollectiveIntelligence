@@ -88,7 +88,13 @@ This version of the sensory-motor diagram adapted to machines represents a simpl
 - **🖹 Outgoing Message**: represents the message that executes the intervention that has been decided on if sent.
 - **📤**: represents the destination of the newly built message which should pick it up, intertret, and have the expected causal effect.
 
-## Observation
+## Modularization
+
+Next up, we will create software modules that implement all parts of this sensory-motor cycle.
+
+Each module comes with interface types used by semantic engineers to define domain-specific logic in.
+
+Furthermore, each module can be hosted on a computer system, with the modules behavior being triggered by incoming messages. It may produce persistet data structures and emits messages to be routed to other module instances.
 
 ## Interpretation
 
