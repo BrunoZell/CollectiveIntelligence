@@ -163,6 +163,13 @@ type NewObservation = {
 
 ## Module: Action Execution
 
+## Network p2p gossiping
+
+- Observation Pool
+- Action Execution Traces
+- Declared Strategy Merge
+- Common Merkle Clock
+
 ## Shared timestamp via Merkle Clock
 
 ## Authentication of real world data via HGTP
