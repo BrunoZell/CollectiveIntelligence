@@ -44,4 +44,33 @@ After the architecture is defined, we further lay out the roadmap of getting hum
 
 ## Sensory-Motor Cycle
 
-We model the sensory motor cycle in a computable ontology to create a shared canvas of reality
+First, consider the sensory-motor cycle:
+
+```mermaid
+graph LR
+A["🌍 Reality"] -->|observe| B["👀 Percepts"]
+B -->|interpret| C["🧠 Imagination"] 
+C -->|decide| D["👋 Intervention"]
+D -->|act| A
+```
+
+This diagram represents the sensory-motor cycle in a clear and concise manner using emojis to illustrate the different components. The flow of information is indicated by the arrows between each component, with the cycle starting and ending with the external environment or **🌍 Reality**. Here's a breakdown of each component:
+
+- **🌍 Reality**: represents the external environment, which provides the sensory inputs that drive the sensory-motor cycle.
+- **👀 Percepts**: represents the perception of sensory inputs, which are processed by the brain to create _percepts_.
+- **🧠 Imagination**: represents the cognitive processing of percepts, which leads to the formation of mental representations and _imagination_.
+- **👋 Intervention**: represents the motor output or _interventions_ generated based on the cognitive processing of percepts and imagination.
+- The arrows between each component represent the flow of information, starting with the observation of sensory inputs, followed by their interpretation and cognitive processing, leading to the generation of motor output and ultimately resulting in a change in the external environment.
+
+In case you are a human reader, you may have noticed that you operate within a sensory-motor cycle yourself. You have senses like eyes and ears to observe the world around you, a brain to interpret and process the information you receive, and a body to act upon your thoughts and feelings, ultimately shaping the world around you.
+
+And you already have an optimization goal: Interpreting percepts in a way that helps you to decide on actions that shape the world around you in a way that leads to more preceived value in future observations.
+
+## The Data Pipeline
+
+## Observation
+
+## Interpretation
+
+## Orientation
+
