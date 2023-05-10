@@ -191,6 +191,12 @@ This structure allows to easily construct proposals to change a given strategy. 
 
 ## Coordination: Ask
 
+An _Ask_ is an expression of desire that is shared within the network. It is defined as a boolean predicate that depends solely on a _Scene_.
+
+And _Ask_ is considered filled if the current moments _Scene_ of the asking user satisfies the predicate.
+
+An _Ask_ is active until its cancellation policy is triggered.
+
 ## Coordination: Offer
 
 ## Coordination: Commit
