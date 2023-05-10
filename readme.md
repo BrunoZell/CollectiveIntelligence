@@ -161,6 +161,21 @@ type NewObservation = {
 
 ## Module: Live Analysis
 
+### Domain-Interface
+
+On a technical level, a _Strategy_ is a pure function that maps a given situation to a _Decision_ about what to do in that moment.
+
+That computation takes as input:
+
+- a given _Scene_ that represents reality
+- a _Reflection_ of the strategies past decisions
+
+with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being accessed via `Sdk.IReflectionQueries`, where both interfaces represent an abstraction of the underlying data structures.
+
+### Behavior
+
+### Data Structure
+
 ## Module: Action Execution
 
 ## Network p2p gossiping
@@ -172,34 +187,40 @@ type NewObservation = {
 
 ## Recap: Type hierarchy overview
 
-## Coordination: Strategy as conditional actions
+## Coordination: Strategy declaration
 
-On a technical level, a _Strategy_ is a pure function that maps a given situation to a _Decision_ about what to do in that moment.
+In addition to the executable strategies executed as part of the users sensory-motor cycle, a declared strategy is shared in the public network. That declaration is used to coordinate with other subjects in the network.
 
-That computation takes as input:
-
-- a given _Scene_ that represents reality
-- a _Reflection_ of the strategies past decisions
-
-with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being accessed via `Sdk.IReflectionQueries`, where both interfaces represent an abstraction of the underlying data structures.
-
-Coordination is another abstraction layer on top of that strategy sandbox. It gives strategy definitions more structure:
+```fsharp
+// Todo: Define an ordered list of conditional actions
+```
 
 It explicitly represents an ordered list of conditional actions. Practically a big "if-else" statement which is executed top to bottom, with each case returning a `Sdk.Decision`.
-
-This structure allows to easily construct proposals to change a given strategy. Those proposals could define removals of conditional actions from the strategy, or additions of conditional actions to the strategy.
 
 ## Coordination: Ask
 
 An _Ask_ is an expression of desire that is shared within the network. It is defined as a boolean predicate that depends solely on a _Scene_.
 
+```fsharp
+type Fulfillment = Fulfilled | Unfulfilled
+type Ask = Scene -> Fulfillment
+```
+
 And _Ask_ is considered filled if the current moments _Scene_ of the asking user satisfies the predicate.
 
 An _Ask_ is active until its cancellation policy is triggered.
 
-## Coordination: Offer
+## Coordination: Proposal (Offer)
 
-## Coordination: Commit
+The structure of the declared strategy is chosen so to make it straight forward to communicate changes to other peoples strategy by making a _Proposal_.
+
+This structure allows to easily construct proposals to change a given strategy. Those proposals define removals of conditional actions from the strategy, and additions of conditional actions to the strategy.
+
+```fsharp
+// Define a Proposal, adding and removing conditonal actions as a diff to an existing strategy
+```
+
+## Coordination: Strategy Declaration (Commit)
 
 ## Decentralization: Shared timestamp via Merkle Clock
 
