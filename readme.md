@@ -68,6 +68,26 @@ And you already have an optimization goal: Interpreting percepts in a way that h
 
 ## The Data Pipeline
 
+Here a version of the sensory-motor diagram adapted to machines:
+
+```mermaid
+graph LR
+A["📥"] -->|receive| B["🖹 Incoming Message"]
+B -->|interpret| C["🌐 Scene"] 
+C -->|decide| D["🦾 Intervention"]
+D -->|express| E["🖹 Outgoing Message"]
+E -->|send| F["📤"]
+```
+
+This version of the sensory-motor diagram adapted to machines represents a simplified model of how a computer system receives and processes messages from other computers through network protocols.
+
+- **📥**: represents the source of received messages from other computers, communicated via a networking protocol.
+- **🖹 Incoming Message**: represents the the application-specific part of the message received, as defined by the networking protocol used.
+- **🌐 Scene**: represents the abstract representation of what was expressed in the messages, resulting in a virtual representation of the context or situation.
+- **🦾 Intervention**: represents the decision of the computer system, based on user-defined rules that map the abstract scene to a decision about what to do.
+- **🖹 Outgoing Message**: represents the message that executes the intervention that has been decided on if sent.
+- **📤**: represents the destination of the newly built message which should pick it up, intertret, and have the expected causal effect.
+
 ## Observation
 
 ## Interpretation
