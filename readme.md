@@ -223,6 +223,27 @@ with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being acces
 
 ### Data Structure
 
+```fsharp
+type ActionInitiation = {
+    ActionType: Type
+    ActionCid: ContentId // CID of this.ActionType
+}
+
+type ActionSet = {
+    Initiations: ActionInitiation array
+}
+```
+
+### Messages
+
+Referencing the whole _Decision Sequence_ makes `NewDecision`-messages idempotent and more tolerant to network faults, where each distinct _Decision_ has a uniqe content address and later messages carry all decisions of possibly dropped messages.
+
+```fsharp
+type NewDecision = {
+    LatestDecision: ContentId<DecisionSequenceHead>
+}
+```
+
 ## Module: Action Execution
 
 Some decisions are executed in the virtual only. For example, a decision to interact with a certain smart contract is executed by signing and broadcasting the desirable transaction to a blockchain network. This module is responsible for executing such actions.
@@ -241,6 +262,15 @@ type IBroker<'Action> =
 Any given `IBroker<'Action>`-instance can be instructed to execute its action by calling `Execute` and passing an instance of its `'Action`-type. The _Broker_ then sends according network IO to the related external computer networks, essentially executing the requested _Action_.
 
 ### Behavior
+
+The module listens to `NewDecision` messages. Each such message references an _Action Set_ (`DataModel.ActionSet`), which contains one or more _Action Initiations_ (`DataModel.ActionInitiation`).
+
+For each received _Action Initiation_, execute the following procedure:
+
+1. Capture current timestamp as of the _Runtime Clock_ as execution start timestamp.
+2. Route `'Action`-instance to matching `IBroker<'Action>` and wait for completion.
+3. Build new node in this instantiations _Execution Sequence_: `DataModel.ExecutionSequenceHead`.
+4. Emit message `ActionExecuted` linking the newest _Execution Sequence_.
 
 ### Data Structure
 
@@ -261,6 +291,14 @@ type ExecutionSequenceHead =
 and ExecutionSequenceNode = {
     Previous: ContentId<ExecutionSequenceHead>
     Action: ActionInitiation
+}
+```
+
+### Messages
+
+```fsharp
+type ActionExecuted = {
+    LatestActionExecution: ContentId<ExecutionSequenceHead>
 }
 ```
 
@@ -292,7 +330,7 @@ type Fulfillment = Fulfilled | Unfulfilled
 type Ask = Scene -> Fulfillment
 ```
 
-And _Ask_ is considered filled if the current moments _Scene_ of the asking user satisfies the predicate.
+An _Ask_ is considered filled if the current moments _Scene_ of the asking user satisfies the predicate.
 
 An _Ask_ is active until its cancellation policy is triggered.
 
