@@ -187,7 +187,7 @@ with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being acces
 
 ## Recap: Type hierarchy overview
 
-## Coordination: Strategy declaration
+## Coordination: Strategy Declaration (Commit)
 
 In addition to the executable strategies executed as part of the users sensory-motor cycle, a declared strategy is shared in the public network. That declaration is used to coordinate with other subjects in the network.
 
@@ -220,7 +220,36 @@ This structure allows to easily construct proposals to change a given strategy. 
 // Define a Proposal, adding and removing conditonal actions as a diff to an existing strategy
 ```
 
-## Coordination: Strategy Declaration (Commit)
+## Economics: Expectations (Simulations)
+
+Given one or more models of the world and the current situation:
+
+- What events could possibly happen in the future, according to the model?
+- What events are likely to happen in the future, according to the model?
+- How does a given _Action_ change the likelihood of future events, according to the model?
+
+The expected probability distribution is the measure of risk on the economy.
+
+## Role: Quant
+
+Place bets in prediction markets about future observations.
+
+They bet in terms of world models as defined by _Scientists_, and bet on characteristics if a future _Scene_ that reflects reality.
+
+Markets are cash-settled, in a scalar unit of value, allowing it to be a hedge for risks.
+
+World models already give out probability distributions. Prediction/Actualization markets add two aspects:
+
+- Liquidity to hedge risks. Useful for coordination.
+- Different odds than the world model, indicating that the model may be wrong
+
+## Economics: Proactive Conflict Resolution (Human-Human Alignment)
+
+If perspectives and values of different humans lead to different ideal actions
+
+non-conflicting = (1) not causaly linked in any relevant way, as determined by all parties involved, or (2) alignment on the same ideal action, as determined by all parties involved (whereas each party might have a different _expectation_ about what future events will happen after executing those actions, but that form of disagreement is fine because there is no conflict about what to do).
+
+## Economics: Post-Morten Conflict Resolution (Dispute)
 
 ## Decentralization: Shared timestamp via Merkle Clock
 
@@ -228,6 +257,36 @@ This structure allows to easily construct proposals to change a given strategy. 
 
 ## Decentralization: Semantically computable & interoperable representation of reference phrases via IEML
 
-## Machine learning: Active inference for automatic world modelling
+## Privacy
 
 ## Machine learning: Model-based reinforcement learning for strategy optimization
+
+## Role: Scientist
+
+Come up and formalize useful models to reason about the world. That includes:
+
+- Idetify useful reference phrases
+- Define _Interpreters_ that map _Observations_ to _References_
+- Define simulations for inaction- and action-scenarios.
+
+## Machine learning: Active inference for automatic world modelling
+
+## Role: Entrepreneur
+
+Design and operate coordination schemes.
+
+### Design
+
+Formalize _Observers_, _Percepts_, _Interpretation_, _Strategy Templates_, _Brokers_, and _Actions_.
+
+### Operate
+
+Actually make people use the _Strategy Templates_ in a way that provides value.
+
+Monitor quality of service, push hot fixes and updates where necessary.
+
+## Role: Human (User)
+
+Specify your values, your _Minimum Viable Life (MVL)_, debug your values, place asks, inspect offers, declare strategies, execute actions as commited.
+
+# Roadmap for Humanity
