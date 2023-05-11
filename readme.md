@@ -225,6 +225,45 @@ with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being acces
 
 ## Module: Action Execution
 
+Some decisions are executed in the virtual only. For example, a decision to interact with a certain smart contract is executed by signing and broadcasting the desirable transaction to a blockchain network. This module is responsible for executing such actions.
+
+### Domain-Interface
+
+_Brokers_ handle all communication with external systems to execute actions that expectedly result in a desired effect.
+
+Brokers are implemented via `Sdk.IBroker<'Action>`:
+
+```fsharp
+type IBroker<'Action> =
+    abstract member Execute : 'Action -> Task
+```
+
+Any given `IBroker<'Action>`-instance can be instructed to execute its action by calling `Execute` and passing an instance of its `'Action`-type. The _Broker_ then sends according network IO to the related external computer networks, essentially executing the requested _Action_.
+
+### Behavior
+
+### Data Structure
+
+```fsharp
+type ActionExecutionTrace =
+    | Success of trace: byte[] option
+    | Error of ``exception``: string option
+
+type ActionExecutionResult = {
+    Trace: ActionExecutionTrace
+    InitiationTimestamp: DateTime
+    CompletionTimestamp: DateTime
+}
+
+type ExecutionSequenceHead =
+    | Start
+    | Execution of Node:ExecutionSequenceNode
+and ExecutionSequenceNode = {
+    Previous: ContentId<ExecutionSequenceHead>
+    Action: ActionInitiation
+}
+```
+
 ## Network p2p gossiping
 
 - Observation Pool
