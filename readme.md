@@ -88,7 +88,7 @@ This version of the sensory-motor diagram adapted to machines represents a simpl
 - **🖹 Outgoing Message**: represents the message that executes the intervention that has been decided on if sent.
 - **📤**: represents the destination of the newly built message which should pick it up, intertret, and have the expected causal effect.
 
-## Modularization
+## Modularized Implementation
 
 Next up, we will create software modules that implement all parts of this sensory-motor cycle.
 
@@ -158,6 +158,53 @@ type NewObservation = {
 ```
 
 ## Module: Observation Pool
+
+The _Observation Pool_ is responsible for aggregating observations from multiple _Observer Groups_ which are potentially distributed in space and operated by different people.
+
+By aggregating observations, it converges to an ordered sequence of observations which is called a _Perspective Sequence_.
+
+### Domain-Interface
+
+This module does not have a domain interface. No domain-specific logic is required for its operations.
+
+### Behavior
+
+Listens to `NewObservation` and `NewPerspective`.
+
+
+### Data Structure
+
+First, there is a linked list _Perspective Sequence_ (`DataModel.PerspectiveSequenceHead`) that specifies a temporal order among observations originating from multiple _Observation Sequences_ (`DataModel.ObservationSequenceHead`).
+
+Second, there is an _Observation Pool_ (`DataModel.ObservationPool`) that is used to reference all available observations made within the system instance. It is a CRDT (conflict-free replicated data type) which makes it easy to gossip around and merge with other versions of the same data structure.
+
+```fsharp
+type PerspectiveSequenceHead =
+    | Beginning
+    | Happening of Node:PerspectiveSequenceNode
+and PerspectiveSequenceNode = {
+    Previous: ContentId<PerspectiveSequenceHead>
+    LatestObservation: ContentId<ObservationSequenceHead>
+}
+
+type ObservationPool = {
+    AggregatePerspective: ContentId<PerspectiveSequenceHead>
+    DroppedPerspectives: ContentId<PerspectiveSequenceHead> Set
+}
+```
+
+### Decentralization: Align on timestamp via a Merkle Clock
+
+In the current implementation, the _Runtime Clock_ just captures the host computers clock and trust it to be accurate. _Perspective Sequences_ are then re-ordered according to those timestamps.
+
+In a decentralized system, such a re-ordering would allow an attacker to insert an observation at an arbitrary point in time.
+
+To prevent this, the system implements a common clock that is not controlled by any single party. This is achieved by using a Merkle Clock, as other CRDTs already proven this to work.
+
+- Protocol Labs put out a paper ["Merkle-CRDTs
+Merkle-DAGs meet CRDTs"](https://research.protocol.ai/publications/merkle-crdts-merkle-dags-meet-crdts/psaras2020.pdf)
+- [Pail](https://www.youtube.com/watch?v=ukfrmBVrpo8) is a mutable key-value store that orders mutations via a Merkle Clock. Alan Shaw even created a _Merkle Clock as a Service_.
+- The [Convex Protocol](http://convex.world/) uses a CRDT for convergent consensus, practically being a Merkle Clock.
 
 ## Module: Live Analysis
 
@@ -250,8 +297,6 @@ If perspectives and values of different humans lead to different ideal actions
 non-conflicting = (1) not causaly linked in any relevant way, as determined by all parties involved, or (2) alignment on the same ideal action, as determined by all parties involved (whereas each party might have a different _expectation_ about what future events will happen after executing those actions, but that form of disagreement is fine because there is no conflict about what to do).
 
 ## Economics: Post-Morten Conflict Resolution (Dispute)
-
-## Decentralization: Shared timestamp via Merkle Clock
 
 ## Decentralization: Authentication of real world data via HGTP
 
