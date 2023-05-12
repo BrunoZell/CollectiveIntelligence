@@ -233,16 +233,32 @@ Merkle-DAGs meet CRDTs"](https://research.protocol.ai/publications/merkle-crdts-
 
 ## Module: Live Analysis
 
+Executes a user-defined strategy on every new piece of information that arrives, i.e. on every new observation. Those new observations either come from own _Observer Groups_ or from _Observation Pool_ gossip.
+
 ### Domain-Interface
 
 On a technical level, a _Strategy_ is a pure function that maps a given situation to a _Decision_ about what to do in that moment.
 
+```fsharp
+type ActionInitiation = {
+    Action: obj
+    Type: System.Type
+}
+
+type Decision =
+    | Inaction
+    | Initiate of Initiatives:ActionInitiation array
+
+type Strategy =
+    Reflection -> Scene -> Decision
+```
+
 That computation takes as input:
 
-- a given _Scene_ that represents reality
-- a _Reflection_ of the strategies past decisions
+- a given `Scene` that represents reality
+- a `Reflection` of the strategies past decisions
 
-with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being accessed via `Sdk.IReflectionQueries`, where both interfaces represent an abstraction of the underlying data structures.
+with `Scene` being accessed via `Sdk.ISceneQueries` and `Reflection` being accessed via `Sdk.IReflectionQueries`, where both interfaces represent an abstraction of the underlying data structures.
 
 ### Behavior
 
@@ -356,7 +372,13 @@ type ActionExecuted = {
 In addition to the executable strategies executed as part of the users sensory-motor cycle, a declared strategy is shared in the public network. That declaration is used to coordinate with other subjects in the network.
 
 ```fsharp
-// Todo: Define an ordered list of conditional actions
+type ConditionalAction = {
+    Condition: Scene -> bool
+    Action: Scene -> Decision
+}
+
+type DeclaredStrategy =
+    DeclaredStrategy of ConditionalAction list
 ```
 
 It explicitly represents an ordered list of conditional actions. Practically a big "if-else" statement which is executed top to bottom, with each case returning a `Sdk.Decision`.
@@ -381,7 +403,10 @@ The structure of the declared strategy is chosen so to make it straight forward 
 This structure allows to easily construct proposals to change a given strategy. Those proposals define removals of conditional actions from the strategy, and additions of conditional actions to the strategy.
 
 ```fsharp
-// Define a Proposal, adding and removing conditonal actions as a diff to an existing strategy
+type StrategyProposal = {
+    Added: ContentId<ConditionalAction> list
+    Removed: ContentId<ConditionalAction> list
+}
 ```
 
 ## Economics: Expectations (Simulations)
