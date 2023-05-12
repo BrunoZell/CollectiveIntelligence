@@ -24,25 +24,31 @@ So it seems we already are collectively intelligent. But not in a digital-native
 
 This documents outlines how digital-native collective intelligence could be structured, and attempts to formalize and implement the necessary protocol to live it out.
 
-## Goal: Enabling more humane social coordination
+## Design Considerations
 
-Designing a new mental framework to do social coordination in, plus implementing the technical infrastructure that supports its usage.
+### Goal: Enabling more humane social coordination
 
-### Non-discriminatory: allow all values across all perspective
+What are we even building? A new mental framework to do social coordination in, plus the technical infrastructure that supports its usage.
+
+Using it must coordinate towards a future reality that humans like. While the humans themselves are deciding on what they like and don't like.
+
+### Requirement: Non-discriminatory: allow all values across all perspective
 
 The system shall allow everybody to express their world views and values in a non-discriminatory manner, while having an optimization process that does not inherently prioritize one human over another by default. Prioritization of humans over other humans must be an emerging property from human values and the current state of reality.
 
-### Whatever commitment you enter, its ultimately up to you to pull through or not
+The act of valuing other peoples values creates morals. The act of valuing other peoples actions creates
+
+### Realization: Whatever commitment you enter, its ultimately up to you to pull through or not
 
 A key fact to deal with is that whatever social contract humans declare to enter, their decisions are never controlled directly. Social contracts only ever influence the behavior of humans indirectly, usually be modelling sanctions and incentives that are conditioned on whether people follow through with their actions as declared in the contract or not.
 
-### Consensus is not the end goal. End goal is to shape reality so we like it more
+### Scoping: Consensus is not the end goal. End goal is to shape reality so we like it more
 
 Furthermore, aligning on a shared virtual state may be part of the solution, but it is not the end goal. Really it is about shaping reality the way we like it, where pretty much all preceived human value is found in reality and not on some shared ledger. The bits in the network are just the means to get to a better reality.
 
-### Adequate coordination mechanisms already exist, but not formalized
+### Note: Adequate coordination mechanisms already exist, but not formalized so they can easily be managed in hypertext
 
-Also, it's important to note that the system is not meant to be a replacement for existing social contracts, but rather a supplement to them. It serves as a common framework to define new and existing coordination mechanisms in, and offers an accounting infrastructure to operate organizations at a global scale.
+This system is not meant to be a replacement for existing social contracts, but rather a supplement to them. It serves as a common framework to define new and existing coordination mechanisms in, and offers an accounting infrastructure to operate organizations at a global scale.
 
 ## Approach
 
