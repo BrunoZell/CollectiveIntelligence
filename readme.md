@@ -477,3 +477,18 @@ Monitor quality of service, push hot fixes and updates where necessary.
 Specify your values, your _Minimum Viable Life (MVL)_, debug your values, place asks, inspect offers, declare strategies, execute actions as commited.
 
 # Roadmap for Humanity
+
+## Learning
+
+Here is the list of important technologies to implement this system. Make sure to read up on them to see why the system is constructed like it is and why it might work.
+
+- [IEML: Information Economy MetaLanguage](https://docs.google.com/document/d/1hEE4IcaH8wbbjiM1yGxEdlJT7j9_gWNO17dOKo-qj28/edit)
+- [HGTP: Hypergraph Transfer Protocol](https://docs.google.com/document/d/1QAQJxoxYjxNW0i3dyPzWqqReI-J7ANePUygQNR_Qfh4)
+- [Cuelang](https://cuelang.org/docs/concepts/logic/)
+- Merkle Clocks: ["Merkle-CRDTs: Merkle-DAGs meet CRDTs"](https://research.protocol.ai/publications/merkle-crdts-merkle-dags-meet-crdts/psaras2020.pdf)
+- CRDTs (Conflict-free replicated data types)
+  - [Pail](https://www.youtube.com/watch?v=ukfrmBVrpo8) is a mutable key-value store that orders mutations via a Merkle Clock. Alan Shaw even created a _Merkle Clock as a Service_.
+  - The [Convex Protocol](http://convex.world/) uses a CRDT for convergent consensus, practically being a Merkle Clock.
+- Category Theory
+- Algebraic Tolology
+- Non-Commutative Geometry (Alain Connes)
