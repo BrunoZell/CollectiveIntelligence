@@ -183,8 +183,19 @@ This module does not have a domain interface. No domain-specific logic is requir
 
 ### Behavior
 
-Listens to `NewObservation` and `NewPerspective`.
+This module maintains a reference to an `DataModel.ObservationPool` with the most unique `DataModel.CapturedObservations` included.
 
+It is merging observations from multiples observation groups distributed thrughout space into a temporally ordered sequence.
+
+**A: Whenever a message `NewObservation` is received:**
+
+- Received `DataModel.CapturedObservations` is merged into the latest `DataModel.ObservationPool`.
+- If `DataModel.ObservationPool` changed, emit message `NewPerspective` linking the newest _Observation Pool_.
+
+**B: Whenever a message `NewPerspective` is received:**
+
+- Received `DataModel.ObservationPool` is merged into the latest `DataModel.ObservationPool`.
+- If `DataModel.ObservationPool` changed, emit message `NewPerspective` linking the newest _Observation Pool_.
 
 ### Data Structure
 
