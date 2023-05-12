@@ -246,16 +246,31 @@ with _Scene_ being accessed via `Sdk.ISceneQueries` and _Reflection_ being acces
 
 ### Behavior
 
+Whenever a message `NewPerspective` is received:
+
+- It is merged with the latest observation pool from memory.
+- If the merge produced a new perspective:
+  - Run the _Strategy_ on all newly sequenced observations
+  - Emit message `NewDecision` for every non-inaction-decision, linking the newest decision index CRDT.
+
 ### Data Structure
 
 ```fsharp
 type ActionInitiation = {
-    ActionType: Type
-    ActionCid: ContentId // CID of this.ActionType
+    ActionType: System.Type
+    ActionCid: ContentId // CID of type this.ActionType
 }
 
 type ActionSet = {
     Initiations: ActionInitiation array
+}
+
+type DecisionSequenceHead =
+    | Start
+    | Initiative of Node:DecisionSequenceNode
+and DecisionSequenceNode = {
+    Previous: ContentId<DecisionSequenceHead>
+    ActionSet: ContentId<ActionSet>
 }
 ```
 
