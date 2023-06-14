@@ -455,7 +455,7 @@ $ASK is a single-dimensional unit of value that represents the basket of all off
 
 ## Economics: Prediction vs Actualization
 
-It is important to seperate investment banking from household banking. Essentially separating speculation from productive output.
+It is important to seperate investment banking from commercial banking. Essentially separating speculation from productive output.
 
 Speculation is inherently zero-sum since it doesn't direclty produce anything, leaving aside for now that the prediction itself may may carry some indirect value.
 
