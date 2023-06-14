@@ -409,6 +409,50 @@ type StrategyProposal = {
 }
 ```
 
+## Economy: Offer
+
+A service provider offering a service to the public.
+
+An offer comes with an order form that must be filled out by the one who orders.
+
+After the order is acknowledged and accepted by the service provider, an according receipt is created to further track the production, delivery, and settlement related to that deal.
+
+## Economy: Receipt
+
+A Receipt is the representation of an actualized service offering. It is created by accepting an Offer.
+
+Every physically distinct produce gets a unique serial number assigned with an attached record that specifies:
+
+- Who is the value receiver (benefitiary)
+- Who carries the risk of a failed delivery
+
+Lifecycle:
+
+- Offer
+- Production
+- Delivery
+- Settlement
+
+## Economy: Voucher
+
+A voucher can be redemmed to receive the according service from the linked service providers (the one who issued this voucher).
+
+Vouchers are a form of potential value (i.e. the key to obtain future realized value, if the desire aligns with the vouchers product).
+
+## Economy: Voucher Basket
+
+Vouchers can be abstracted over and thus be bundled together into a single unit.
+
+## Economy: Value Set
+
+An ordered set of Asks that establish a prioritzation between different asks.
+
+Each distinct Value Set defines a distinct unit of value.
+
+## Economy: $ASK
+
+$ASK is a single-dimensional unit of value that represents the basket of all offered services within the economy.
+
 ## Economics: Expectations (Simulations)
 
 Given one or more models of the world and the current situation:
