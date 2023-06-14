@@ -453,6 +453,20 @@ Each distinct Value Set defines a distinct unit of value.
 
 $ASK is a single-dimensional unit of value that represents the basket of all offered services within the economy.
 
+## Economics: Prediction vs Actualization
+
+It is important to seperate investment banking from household banking. Essentially separating speculation from productive output.
+
+Speculation is inherently zero-sum since it doesn't direclty produce anything, leaving aside for now that the prediction itself may may carry some indirect value.
+
+Production, which represents actual economic activity in the physical world, is more often than not positive-sum. That tendency comes from economic systems that seek win-win situations and laws that aim to reduce undesirable happenings like crime.
+
+Technically, that difference is embodied in prediction and actualization.
+
+Predictions are bets on how reality may unfold, specified by claiming attributes about future observations. Those bets are entirely virtual and thus carry a marginal cost of zero.
+
+Actualizations require somebody or something to actually do something in reality. Which is spending some form or energy to change it, typically aiming for a better state of things. Because this usually is an actual (energy-intensive) process, the marginal costs are accordingly high.
+
 ## Economics: Expectations (Simulations)
 
 Given one or more models of the world and the current situation:
