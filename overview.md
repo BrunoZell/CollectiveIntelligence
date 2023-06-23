@@ -12,6 +12,25 @@ Each layer is standardizing one of three concerns by defining message templates 
 - _Coordination_ as **Ask ➡️ Propose ➡️ Commit ➡️ Do ➡️ Measure**
 - _Economy_ as **Offer ➡️ Order ➡️ Deal ➡️ Production ➡️ Delivery ➡️ Settlement**
 
+### Coordination
+
+This conversation guides the negotiation of who does what. It helps to shape reality so we like it more.
+
+- Ask: **what do we want?**
+- Propose: **what could we do differently?**
+- Commit: **what do I declare to do?**
+- Do: **what did I end up doing?**
+- Measure: **what was the effect of my actions?**
+
+### Economy
+
+- Offer: **what would I do for you?**
+- Order: **I'd like you to do that for me**
+- Deal: **I commit to do that for you**
+- Production: **I make it happen**
+- Delivery: **Here it is, enjoy!**
+- Settlement: **Any problems or are we good?**
+
 ## Technical Components
 
 Three shared databases the network maintains:
