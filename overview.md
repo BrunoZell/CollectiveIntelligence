@@ -1,5 +1,17 @@
 # Ask Network Overview
 
+## Three Layers of the Network
+
+1. Computable sensory-motor cycle to create and communicate representations of reality
+2. Coordination markets to negitiate who does what directly, creating a new design space for productive economies
+3. The Asknet Economy, which creates a structure of service providers and benefitiaries with the aim of being fair and humane.
+
+Each layer is standardizing one of three concerns by defining message templates that guide the conversation:
+
+- _Representation_ as **Observe ➡️ Interpret ➡️ Decide ➡️ Act**
+- _Coordination_ as **Ask ➡️ Propose ➡️ Commit ➡️ Do ➡️ Measure**
+- _Economy_ as **Offer ➡️ Order ➡️ Deal ➡️ Production ➡️ Delivery ➡️ Settlement**
+
 ## Technical Components
 
 Three shared databases the network maintains:
@@ -13,6 +25,15 @@ The _Knowledge Base_ contains observations of the external world, which is inter
 The _Ask Pool_ is a collection of user-defined Asks, which claim desired and undesired properties of the shared representation of the world.
 
 The _Collective Strategy_ is the aggregate of every users individual strategy, declaring what each user will do under which circumstances. A strategy is defined as an ordered list of conditional action, essentially stating _"I do this if I observe that"_.
+
+## Domain Models
+
+Domain Models are packages of ideas to communicate how one may think about the world. It allows the unambiguous sharing of assumptions about how the world works, and enables reproducable automatic reasoning. They specify:
+
+- A set of observations one could make, defined by the imperative behavior of _Observers_ which source sensory information from a network connection.
+- A set of actions one could take
+- A causal model of assumed behavior to reason backwards from observations, and forwards from actions
+- A semantic query interface that specifies latent (unobservable) variables of the represented external system to allow the construction of custom queries to answer questions about a given representation of the world.
 
 ## Network Consensus State
 
@@ -40,7 +61,9 @@ type ActionInitiation = {
 }
 ```
 
-## Asks
+## Wants as Asks
+
+_Asks_ are satisfiable queries on a given world representation. They are used to communicate what one might want and don't want to see in the world.
 
 ```fsharp
 type Fulfillment = Fulfilled | Unfulfilled
