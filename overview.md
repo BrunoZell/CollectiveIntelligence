@@ -80,6 +80,22 @@ type DomainModel = {
     Actions: ActionScmNodeType list
 }
 
+/// Defines an action space of somebody or something.
+/// Describes an action executed by somebody or something if instantiated.
+/// Instantiated on the graph ex-ante (before doing it) to estimate that actions effect,
+/// Or it's instantiated on the graph ex-post (after observation) just as a hidden variable to mark that some subject might have done an action, or could have done an action, in the past.
+type InterventionalNode = interface end
+
+/// Defines the space of all possible measurements after interpretation. Each type of percept is it's own type (of interface ObservationalNode), with each type defining the space of all possible observations.
+/// Describes an observation made:
+/// Ex-ante (before actual observation) to reason about hypothetical observations (either backwards in time toward possible causes, or forwards in time toward possible downstream effects).
+/// Post-ante (derived from an actual observation, via interpretation) to reason about the representation of the actual.
+type ObservationalNode = interface end
+
+/// Defines a state space of external system (orchestration of somebodies and somethings) this domain module aims to represent.
+/// It is freely invented as needed by the causal-observational theory defined in this domain module. Hidden nodes may also be called "latent state".
+type HiddenNode = interface end
+
 type ActionInitiation = {
     Domain: ContentId<DomainModel>
     Action: ContentId<ActionScmNodeType>
