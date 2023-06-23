@@ -12,6 +12,13 @@ Each layer is standardizing one of three concerns by defining message templates 
 - _Coordination_ as **Ask ➡️ Propose ➡️ Commit ➡️ Do ➡️ Measure**
 - _Economy_ as **Offer ➡️ Order ➡️ Deal ➡️ Production ➡️ Delivery ➡️ Settlement**
 
+### Representation
+
+- Observe: **what do I sense?**
+- Interpret: **how do I see it?**
+- Decide: **what do I do now?**
+- Act: **I do this now**
+
 ### Coordination
 
 This conversation guides the negotiation of who does what. It helps to shape reality so we like it more.
@@ -47,7 +54,7 @@ The _Collective Strategy_ is the aggregate of every users individual strategy, d
 
 ## Domain Models
 
-Domain Models are packages of ideas to communicate how one may think about the world. It allows the unambiguous sharing of assumptions about how the world works, and enables reproducable automatic reasoning. They specify:
+Domain Models are packages of ideas to communicate how one may think about the world. It allows the unambiguous sharing of assumptions about how the world works, and enables reproducible automatic reasoning. They specify:
 
 - A set of observations one could make, defined by the imperative behavior of _Observers_ which source sensory information from a network connection.
 - A set of actions one could take
