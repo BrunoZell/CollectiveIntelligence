@@ -8,27 +8,31 @@ Next, we create a central collection point of peoples wants. That is, satisfiabl
 
 Next, we create a strongly-typed conversation about (1) what we could do (proposals) and (2) what we declare to do (commitments).
 
-## Representation
+## Observations
 
 Data is our window into reality. All data in Ask Network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
 
 Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. For that there are sensors. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
-That message history is used to derive reproducible representations of the actual and virtual external world. Such reproducible representations are specified as causal-semantic models [and data consistency constraints as ologs] that take raw protocol-level recorded messages as input, and interpret them as observational nodes in a causal graph.
+## Theories
 
-Such an instance of a causal graph, together with the assumed functional-stochastic relationships between them, can be used to reason backwards in time (I observed this, therefore that must have happened), and forwards in itme (if I do this, expectedly that will happen).
+That message history is used to derive reproducible representations of the actual and virtual external world. Such reproducible representations are specified as causal-semantic models [and data consistency constraints as ologs] that take observations as input, and derive conclusions about the external world.
 
-Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, partly auto-generated from the ontology.
+One can instantiate a causal graph by integrating observations into the assumed causal relationships, producing a context. On that context, it can be reasoned backwards in time (I observed this, therefore that must have happened), and forwards in itme (if I do this, expectedly that will happen).
+
+Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combining semantic annotations with data types.
+
+Domain modellers combine interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of theories that further can be used to author coordination schemes.
 
 Specifying interpretations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved observations or actions (counterfactuals).
 
-In summary, representing the outer world is done by capturing and preserving all relevant virtual message exchanges with a standardization of reasoning about the observed outer world. Domain modellers combine interpretation, authentication, causal assumptions, and semantic annotations into an interoperable domain module, producing an ever growing library of theories that further can be used to author coordination schemes.
-
-## Survey of Wants
-
-Before fruitful coordination can take place, there need to be success metrics which when applied to the consensus-representation of reality indicate whether value was realized or not.
-
 ## Coordination
+
+- Establish wants[+theories]
+- Measure fulfillment of wants[+theories] on observations
+- Create commitment schemes that point to possible valuable action paths
+- Search through all possibilities and propose commitments
+- Evaluate all proposals and change to any plan that is more +EV.
 
 Proposal: What could we do? As changes to other peoples todo list.
 
@@ -48,19 +52,19 @@ Show how an actual service offering (with commited subjects) influences how the 
 
 The initial account balance is always at 1MVL/s. Rewards
 
-## Social Network
+### Social Network
 
 Each account keeps track of: balances, resource consumption, wants, commitments, action traces
 
-## Self-determined floating Economy
+### Commitment Schemes
 
-Derive optimal parameters (of all possible economies) from peoples wants, and wants of wants (=morals), shared values ect.
-
-## Commitment Schemes
-
-## Operations
+### Operations
 
 commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
+
+### Self-determined floating Economy
+
+Derive optimal parameters (of all possible economies) from peoples wants, and wants of wants (=morals), shared values ect.
 
 ## Example: Ride Sharing
 
