@@ -29,9 +29,10 @@ Specifying interpretations of reality in standardized and thus interoperable cau
 ## Coordination
 
 - Establish wants[+theories]
-- Measure fulfillment of wants[+theories] on observations
-- Create commitment schemes that point to possible valuable action paths
-- Search through all possibilities and propose commitments
+- Measure historic fulfillment of wants[+theories] on observations (realized value)
+- Estimate future fulfillment of wants[+theories] on latest observations for both total inaction and current commitments along all failure cases (expected value)
+- Create commitment schemes that point to possibly valuable action paths
+- Given latest observations, current wants[+theories], and current commitments[+theories]: search through all possibilities and propose changes to commitments for one or more accounts
 - Evaluate all proposals and change to any plan that is more +EV.
 
 Proposal: What could we do? As changes to other peoples todo list.
@@ -42,9 +43,18 @@ Both proposals and commitments are expressed as conditional actions.
 
 Condition: A CQL boolean query on the consensus view
 
+## Economics
+
+Show how this database creates a design space for economies. Economies have a parameter space along:
+
+- What is produced?
+- How is it produced?
+- How much is produced
+- For whom is it produced
+
 Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
 
-## Economy
+## Ask Economy
 
 Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
 
