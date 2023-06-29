@@ -30,33 +30,72 @@ Specifying interpretations of reality in standardized and thus interoperable cau
 
 - Establish wants[+theories]
 - Measure historic fulfillment of wants[+theories] on observations (realized value)
-- Estimate future fulfillment of wants[+theories] on latest observations for both total inaction and current commitments along all failure cases (expected value)
-- Create commitment schemes that point to possibly valuable action paths
+- Estimate future fulfillment of wants[+theories] on latest observations (expected value). Estimation of EV is subject to the theories used for reasoning and assumptions about who will do what.
 - Given latest observations, current wants[+theories], and current commitments[+theories]: search through all possibilities and propose changes to commitments for one or more accounts
 - Evaluate all proposals and change to any plan that is more +EV.
 
-Proposal: What could we do? As changes to other peoples todo list.
+### Wants
 
-Commitment: What do we do? As declaration of own future conditional action.
+Each want is a statement about: **how do we want it?**
 
-Both proposals and commitments are expressed as conditional actions.
+Wants are represented as binary queries, stating whether that want is fulfilled or not in a given context. These queries are composed from semantic query interfaces of domain models.
 
-Condition: A CQL boolean query on the consensus view
+The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
+
+### Proposals
+
+Each proposal is an answer to the question: **what could we do?**
+
+It is represented as changes to other peoples commitments.
+
+### Commitments
+
+Each commitment is a declaration of: **what will we do?**
+
+Commitments are represented as conditional actions. Conditions are either satisfied or not in a given context. The action derived from a matching context is then either executed or not based on the committers final behavior.
+
+Commiters are referred to via their network accounts and can relate to both beings and things.
 
 ## Economics
 
-Show how this database creates a design space for economies. Economies have a parameter space along:
+Given a theory, a proposal implies: **how could we make it?**
+
+Similarly, a commitment implies: **how will we make it?**
+
+Coordination is concerned with: **How do we make it, so we like it better?**
+
+All wants of a single subject imply a priorization of all possible contexts, where all possible contexts are defined by the domain models referenced by the expression want.
+
+The wants of all subjects in the network, together with ex-ante conflict prevention, fairness selector, and legal rights, imply a priorization of the consensus context.
+
+Wants are transparent about how their fulfillment depends on observations, thus contributors can reason about what needs to get done in order to fulfill a want.
+
+A given action ex-ante implies a difference in expected future observations compared to inaction.
+
+A given action ex-post implies the actor to have caused related observations as they would be different if the action did not take place.
+
+Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
+
+## Ask Economy
+
+Economists teach that money has three functions, not one.
+
+- It is a means of exchange: it lets you confer power to others.
+- It is a store of value: it lets you delay the exercise of power in time.
+- It is a unit of account: it lets you measure many things by a common yardstick.
+
+The economy proposed here seperates these functions by solving them explicitly.
+
+Most economic theories are answereng those questions:
 
 - What is produced?
 - How is it produced?
 - How much is produced
 - For whom is it produced
 
-Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
-
-## Ask Economy
-
 Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
+
+- Create commitment schemes that point to possibly valuable action paths
 
 Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
 
