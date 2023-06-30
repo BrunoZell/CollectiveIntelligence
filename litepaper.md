@@ -58,11 +58,24 @@ Commiters are referred to via their network accounts and can relate to both bein
 
 ## Economics
 
-Given a theory, a proposal implies: **how could we make it?**
+Evaluating conditional actions from proposals and commitments yields an estimation of how reality expectedly is affected by it when compared to the inaction scenario.
 
-Similarly, a commitment implies: **how will we make it?**
+While the constraints embedded in the condition guarantee certain abstract truths in any matching context, an actual matching context usually carries additional information that may lead to more detailed or correct estimates about what might happen.
 
-Coordination is concerned with: **How do we make it, so we like it better?**
+Conditional actions in commitments thus tend to include multiple conditions that represent different possible cases that are planned for ex-ante.
+
+Such conditions may depend on previous actions which allows for the creation of multi-step action paths. Such action paths can be declared and executed across multiple subjects given there is a communication channel between them to share progress.
+
+Multi-subject action paths can be gradually negitiated and built up by commitments that depend on: (1) other peoples commitments or (2) other peoples action traces.
+
+(1) The former is akin to cooperation. I do this and you do that and if we both do it well we end up in a more desirable situation than otherwise. Most straight forward is a win-win situation where all of the participants have a desire for the expecte doutcome. Although even in win-win situations (shared goal) there might be a misalignment about who does what and how exactly actions should be done. For that, mutually dependent commitments can be used to negotiate the planned action path ex-ante, where the commit of one subject is conditioned on another subject having committed to the complementary action with the desired attriutes.
+
+(2) The latter is akin to dispute resolution. I observed you doing something that you may like, but I didn't. In a purely anarchistic setting this would be the end of the story. But any advanced economy has established a legal system that regulate who has the right to do what, declares what others might do to you if you don't respect other subjects rights, and operate a dispute process where disagreements are evaluated and, possibly forcibly, a corrective action is decided on. Further there is an executive who enforce the official corrective action, and a legislative process that fine tune and adjust the rules to changing circumstances.
+
+Coordination is concerned with: **How do we do, so we like it better?**
+
+Rules are concerned with: **What should I not do so others don't have it worse?**
+
 
 All wants of a single subject imply a priorization of all possible contexts, where all possible contexts are defined by the domain models referenced by the expression want.
 
@@ -115,7 +128,7 @@ commitments and work; instatiations of commitment schemes with actual people and
 
 Derive optimal parameters (of all possible economies) from peoples wants, and wants of wants (=morals), shared values ect.
 
-## Example: Ride Sharing
+## Example: Peer to Peer Ride Sharing
 
 show domain models used: cars, drivers, pickup, street navigation, pickup, dropoff, working schedule, smartphone usage
 
@@ -143,6 +156,8 @@ offer: {
 }
 
 match with committed drivers:market maker propose order form of a service that exactly fulfills the users ask. The MM may have to invent that service on his own but then purely virtually orchestrate different service offerings, some of them actual services. Risk is on him to successfully deliver the orchestration, with risk of downstream suplliers failing possibly hedged in prediction markets. Are there any leftover, unclaimed values the MM can collect in that match?
+
+## Example: Peer to Peer Crypto Exchange
 
 ## Positioning Ask Network
 
