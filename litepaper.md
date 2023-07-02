@@ -22,9 +22,9 @@ One can instantiate a causal graph by integrating observations into the assumed 
 
 Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combining semantic annotations with data types.
 
-Domain modellers combine interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of theories that further can be used to author coordination schemes.
+Domain modellers combine interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of theories that further can be used to author commitment schemes.
 
-Specifying interpretations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved observations or actions (counterfactuals).
+Specifying interpretations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
 
 ## Coordination
 
@@ -66,16 +66,18 @@ Conditional actions in commitments thus tend to include multiple conditions that
 
 Such conditions may depend on previous actions which allows for the creation of multi-step action paths. Such action paths can be declared and executed across multiple subjects given there is a communication channel between them to share progress.
 
-Multi-subject action paths can be gradually negitiated and built up by commitments that depend on: (1) other peoples commitments or (2) other peoples action traces.
+Multi-subject action paths can be gradually negotiated and built up by commitments that depend on: (1) other peoples commitments or (2) other peoples action traces.
 
 (1) The former is akin to cooperation. I do this and you do that and if we both do it well we end up in a more desirable situation than otherwise. Most straight forward is a win-win situation where all of the participants have a desire for the expecte doutcome. Although even in win-win situations (shared goal) there might be a misalignment about who does what and how exactly actions should be done. For that, mutually dependent commitments can be used to negotiate the planned action path ex-ante, where the commit of one subject is conditioned on another subject having committed to the complementary action with the desired attriutes.
 
 (2) The latter is akin to dispute resolution. I observed you doing something that you may like, but I didn't. In a purely anarchistic setting this would be the end of the story. But any advanced economy has established a legal system that regulate who has the right to do what, declares what others might do to you if you don't respect other subjects rights, and operate a dispute process where disagreements are evaluated and, possibly forcibly, a corrective action is decided on. Further there is an executive who enforce the official corrective action, and a legislative process that fine tune and adjust the rules to changing circumstances.
 
-Coordination is concerned with: **How do we do, so we like it better?**
+Coordination is concerned with proactively planning actions. A given action ex-ante implies a difference in expected future observations compared to inaction, which when evaluated against wants may or mat not be desireable for some subjects. It answers the question: **How do we make it, so we like it better?**
 
-Rules are concerned with: **What should I not do so others don't have it worse?**
+Ruling is concerned with reactive counter-actions. It is coordinated by the subjects whichs value got destructed, and is aimed at recreating a desirable situation that was inadequately taken from them by another subject. A given action ex-post implies the actor to have caused related observations as they would be different if the action did not take place.
+It  **What should I not do so others don't have it worse?**
 
+Neither coordination nor rulings are defined explicitly in the base layer of coordination. Such constructs are higher level abstractions that can be compiled down into wants, proposals, and commitments. Such higher level abstractions are defined by commitment schemes as defined later. They are a collection of abstract (parameterized) and mutually dependent commitment templates which can be used to find proposals that point to action plans with expectedly desirable outcomes.
 
 All wants of a single subject imply a priorization of all possible contexts, where all possible contexts are defined by the domain models referenced by the expression want.
 
@@ -83,11 +85,15 @@ The wants of all subjects in the network, together with ex-ante conflict prevent
 
 Wants are transparent about how their fulfillment depends on observations, thus contributors can reason about what needs to get done in order to fulfill a want.
 
-A given action ex-ante implies a difference in expected future observations compared to inaction.
-
-A given action ex-post implies the actor to have caused related observations as they would be different if the action did not take place.
-
 Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
+
+### Network of Subjects and Objects
+
+Each account keeps track of: balances, resource consumption, wants, commitments, action traces
+
+### Operations
+
+commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
 
 ## Ask Economy
 
@@ -108,21 +114,11 @@ Most economic theories are answereng those questions:
 
 Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
 
-- Create commitment schemes that point to possibly valuable action paths
+Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
 
 Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
 
 The initial account balance is always at 1MVL/s. Rewards
-
-### Social Network
-
-Each account keeps track of: balances, resource consumption, wants, commitments, action traces
-
-### Commitment Schemes
-
-### Operations
-
-commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
 
 ### Self-determined floating Economy
 
