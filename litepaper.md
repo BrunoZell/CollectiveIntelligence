@@ -26,6 +26,10 @@ Domain modellers combine interpretation, authentication, causal assumptions, and
 
 Specifying interpretations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
 
+## Network of Subjects and Objects
+
+Each account keeps track of: balances, resource consumption, wants, commitments, action traces
+
 ## Coordination
 
 - Establish wants[+theories]
@@ -87,17 +91,9 @@ Wants are transparent about how their fulfillment depends on observations, thus 
 
 Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
 
-### Network of Subjects and Objects
+## Production
 
-Each account keeps track of: balances, resource consumption, wants, commitments, action traces
-
-### Operations
-
-commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
-
-## Ask Economy
-
-Economists teach that money has three functions, not one.
+Economists teach that money has three functions:
 
 - It is a means of exchange: it lets you confer power to others.
 - It is a store of value: it lets you delay the exercise of power in time.
@@ -115,6 +111,10 @@ Most economic theories are answereng those questions:
 Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
 
 Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
+
+Operations: commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
+
+## Tokenomics
 
 Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
 
@@ -167,10 +167,13 @@ and point to the big ecosystem of entrepreneurs creating organizations within th
 
 ## Next steps
 
-We are implementing the first version of this.
+We are implementing the first version of this: First we implement a generalized +EV-Crawler with applications in algorithmic trading of electricity and crypto assets. Then we go on an implement the Ask Economy as a public network.
 
-Please either try to contribute with expertise and dedication in exchange for a minimum viable life (MVL),
+In case you want to contribute, you can do so by:
 
-or donate crypto assets to pay the MVLs of our contributors and get a spot on the seed list.
+- (i) help implementing this using your technical expertise and dedication in exchange for a minimum viable life (MVL), or
+- (ii) donating crypto assets to pay for the MVLs of our contributors and get a spot on the networks seed list.
 
-Either way, you get to be part of Spectrum DAO.
+If (i) applies to you, look for further instructions in the _#builders_-channel on our Discord.
+
+If (ii) applies to you, send crypto assets into our SAFE on either Ethereum, Arbitrum, or Polygon. The address is the same for all networks: `0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e`.
