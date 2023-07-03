@@ -28,19 +28,27 @@ Specifying representations of reality in standardized and thus interoperable cau
 
 Furthermore the network provides a continuous integration pipeline for domain modellers by testing their causal theories against real world data[2: by connecting to HGTP L0].
 
-## Subjects and Objects
+## Subjects, Objects, and Actions
 
-While the causal-semantic models of domains are free to define arbitrary processes with arbitrary semantic annotations, this section defines an abstract ontology that underly coordination markets.
+This section describes the abstract domain of beings and things sharing both the same virtual cyberspace and the same actuality.
 
-Of primary importance are individuals which represent a physical embodyment of single living organisms, virtually represented as a _subject_.
+Beings are individual living organisms, possibly self-conscious. In the actual they occur as the physical embodyment of that  organism. In the virtual they are represented as a _subject_.
 
-Of secondary importance are
+Things are persistent objects, usually with a certain behavior. In the actual, objects are characterized by their presence in the geospacial process. In the virtual, they are represented by (a) assumed causal behavior, and (b) an unlocked action set when the object is used as an instrument by a subject. Or (c) by a self-issued identity maintained by an embedded device, like a MAC address.
 
-Special emphasis lies on the spacial process. This is where all actual economic exchange happens. Either production or consumption or both.
+- Action spaces in the virtual
+- Native human action space in the actual
+- Augmented human action space in the actual using objects as instruments
+- Acts vs actions
+- Acts as stochastic functional plan when viewed externally
+- Acts as condtional actions when viewed internally
+- Quantify causal influence on somebody or something
+- Power over people = potential actual causal influence over people
+- Attribution of effects to subjects or objects inferred from action traces (compared to inaction)
 
-Within the geospacial process we interconnect many domains of value, especially that of physical items.
+Special emphasis lies on the geospatial process, which represents actual reality. This is where all actual economic production and consumption happens. 
 
-Each account keeps track of: balances, resource consumption, wants, commitments, action traces
+With all beings and things embedded in the geospatial process, it indexes humans, animals, physical items, and natural resources.
 
 ## Economics
 
@@ -106,6 +114,8 @@ Do it. Or not. Record evidence.
 Evaluate wants continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value.
 
 ## Coordination Markets
+
+Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption 
 
 - Measure historic fulfillment of wants[+domains] on observations (realized value)
 - Estimate future fulfillment of wants[+domains] on latest observations (expected value). Estimation of EV is subject to the domains used for reasoning and assumptions about who will do what.
