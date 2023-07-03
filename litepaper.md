@@ -46,7 +46,7 @@ Things are persistent objects, usually with a certain behavior. In the actual, o
 - Power over people = potential actual causal influence over people
 - Attribution of effects to subjects or objects inferred from action traces (compared to inaction)
 
-Special emphasis lies on the geospatial process, which represents actual reality. This is where all actual economic production and consumption happens. 
+Special emphasis lies on the geospatial process, which represents actual reality. This is where all actual economic production and consumption happens.
 
 With all beings and things embedded in the geospatial process, it indexes humans, animals, physical items, and natural resources.
 
@@ -115,7 +115,7 @@ Evaluate wants continuously on all observations as a measure for economic health
 
 ## Coordination Markets
 
-Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption 
+Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption
 
 - Measure historic fulfillment of wants[+domains] on observations (realized value)
 - Estimate future fulfillment of wants[+domains] on latest observations (expected value). Estimation of EV is subject to the domains used for reasoning and assumptions about who will do what.
