@@ -14,28 +14,40 @@ Data is our window into reality. All data in Ask Network is modelled as _Message
 
 Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data one must use sensors. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
-## Theories
+## Domains
 
-That message history is used to derive reproducible representations of the actual and virtual external world. Such reproducible representations are specified as causal-semantic models that take observations as input, and derive conclusions about the external world.
+That message history is used to derive reproducible representations of the actual and virtual external world. Such reproducible representations are specified as domains that take observations as input, and derive conclusions about the past, present, and future external world, subject to explicit assumptions about causal relationships.
 
-One can instantiate a causal graph by integrating observations into the assumed causal relationships, producing a context. On that context, it can be reasoned backwards in time (I observed this, therefore that must have happened), and forwards in itme (if I do this, expectedly that will happen).
+At each domains core lies a causal graph. One can instantiate a causal graph by integrating observations into explicitly assumed causal relationships, producing a context. On that context, it can be reasoned backwards in time (I observed this, therefore that must have happened), and forwards in itme (if I do this, expectedly that will happen).
 
-Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combining semantic annotations with data types.
+Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Nodes in the causal graphs carry semantically computable annotations in IEML[1]. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combined with the domains semantic annotations in the formulation of the query.
 
-Domain modellers combine interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of theories that further can be used to author commitment schemes.
+Domain modellers combine observation procedures, interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of domains that further can be used to facilitate efficient and effective social coordination.
 
-Specifying interpretations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
+Specifying representations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
+
+Furthermore the network provides a continuous integration pipeline for domain modellers by testing their causal theories against real world data[2: by connecting to HGTP L0].
 
 ## Subjects and Objects
+
+While the causal-semantic models of domains are free to define arbitrary processes with arbitrary semantic annotations, this section defines an abstract ontology that underly coordination markets.
+
+Of primary importance are individuals which represent a physical embodyment of single living organisms, virtually represented as a _subject_.
+
+Of secondary importance are
+
+Special emphasis lies on the spacial process. This is where all actual economic exchange happens. Either production or consumption or both.
+
+Within the geospacial process we interconnect many domains of value, especially that of physical items.
 
 Each account keeps track of: balances, resource consumption, wants, commitments, action traces
 
 ## Coordination
 
-- Establish wants[+theories]
-- Measure historic fulfillment of wants[+theories] on observations (realized value)
-- Estimate future fulfillment of wants[+theories] on latest observations (expected value). Estimation of EV is subject to the theories used for reasoning and assumptions about who will do what.
-- Given latest observations, current wants[+theories], and current commitments[+theories]: search through all possibilities and propose changes to commitments for one or more accounts
+- Establish wants[+domains]
+- Measure historic fulfillment of wants[+domains] on observations (realized value)
+- Estimate future fulfillment of wants[+domains] on latest observations (expected value). Estimation of EV is subject to the domains used for reasoning and assumptions about who will do what.
+- Given latest observations, current wants[+domains], and current commitments[+domains]: search through all possibilities and propose changes to commitments for one or more accounts
 - Evaluate all proposals and change to any plan that is more +EV.
 
 ### Wants
@@ -91,7 +103,7 @@ Wants are transparent about how their fulfillment depends on observations, thus 
 
 Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
 
-## Production
+## Coordination Markets
 
 Economists teach that money has three functions:
 
@@ -120,9 +132,7 @@ Show how an actual service offering (with commited subjects) influences how the 
 
 The initial account balance is always at 1MVL/s. Rewards
 
-### Self-determined floating Economy
-
-Derive optimal parameters (of all possible economies) from peoples wants, and wants of wants (=morals), shared values ect.
+Derive optimal collective strategy from all peoples wants, and wants of wants (=morals, and further sanctions), commitments, dependency, power.
 
 ## Example: Peer to Peer Ride Sharing
 
@@ -153,15 +163,15 @@ offer: {
 
 match with committed drivers:market maker propose order form of a service that exactly fulfills the users ask. The MM may have to invent that service on his own but then purely virtually orchestrate different service offerings, some of them actual services. Risk is on him to successfully deliver the orchestration, with risk of downstream suplliers failing possibly hedged in prediction markets. Are there any leftover, unclaimed values the MM can collect in that match?
 
-## Example: Peer to Peer Crypto Exchange
-
 ## Positioning Ask Network
 
-briefly illustrate history of banking, listing problems with their causes, and the solutions humans implemented (and are still in use today).
+briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention: Bartering, debt, commodity money, bank notes, central banks, first ERMA computer, clearinghouse systems (automatic payments and ATM transactions), SWIFT.
 
-show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money.
+Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
 
-show how it is the next evolution in money/banking/finance.
+show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
+
+show how Ask Network is the next evolution in money/banking/finance.
 
 and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
 
@@ -169,7 +179,7 @@ and point to the big ecosystem of entrepreneurs creating organizations within th
 
 - Counterfactual reasoning with structural causal models (Judea Pearl).
 - Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data)
-- Consistent data migration between theories with Ologs
+- Consistent data migration between domains with Ologs
 - Information querying on the ologs with CQL (the Categorical Query Language)
 - Interoperable semantic annotations of olog objects with IEML (the Information Economy MetaLanguage)
 - Interoperability with virtual and actual reality (external blockchain networks and physical reality) with the HGTP data standard (Hypergraph Transfer Protocol)
