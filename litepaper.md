@@ -48,6 +48,8 @@ Things are persistent objects, usually with a certain behavior. In the actual, o
 
 This section analyzes the dynamics of subjects interacting with each other in the actual.
 
+Every analysis explicitly imports domain theories.
+
 The geospatial process is considered the representation of actuality. This is where all actual economic production and consumption happens, which is what the network accounts for.
 
 From the outside, all subjects are viewd as having a sensory motor cycle. That is:
@@ -57,14 +59,96 @@ From the outside, all subjects are viewd as having a sensory motor cycle. That i
 - Decision function that maps the latest context to a `Decision = Inaction | Action<A>` (which implies a tendency towards certain outcomes)
 - A motor system that acts according to the subjects decision function
 
-Further, each subject is related to one physical embodiment in the actual. By default, every subject with an active account is considered human and given the _Native Human Action Space_, assuming that no other life on earth is capable of using modern computer user interfaces.
+Each subject is assumed to do whatever it wants at any given moment as the default strategy.
 
-Every analysis explicitly imports domain theories.
+But subjects may influence each other with their acts, positively or negatively. This soon will give rise to coordination between subjects.
+
+For that, subjects communicate a shared world view via digital communication networks, and negotiate social coordination directly. A general scheme for such a conversation is layed out in the next section.
+
+## Coordination
+
+This section defines an abstract conversation to semi-automatically negotiate social coordination directly in terms of conditional actions (_"I do this if I observe that"_), from which then commitment schemes are constructed (_"I do this if you do that"_).
+
+The goals for this conversaition is:
+
+- (i) We recognize that subjects carry their own individual wants and each subject should be heard
+- (ii) We also would welcome an open and unambiguous conversation about what we can do, esentially searching through our possible action paths.
+- (iii) Further, an unambiguous social contract with automatic accounting and trustless settlement could help to coordinate on what we do.
+
+The conversation defines three communication channels:
+
+- (i) Broadcasting of wants for each subject
+- (ii) Broadcasting of potential action paths
+- (iii) Declaring of own commitment to action paths
+
+With three types of messages, respectively:
+
+- (i) **Wants**, answering: **how do we like it?**
+  
+  _(Represented as binary queries (fulfilled or not) in a given context.)_
+
+- (ii) **Proposals**, answering: **what could we do?**
+
+  _(Represented as changes (additions and removals) of commitments of one or more subjects.)_
+  
+- (iii) **Commitments**, answering: **what will we do?**
+
+  _(A signed action path, represented as an ordered set of conditional actions. Conditions are either satisfied or not in a given context. The action choice is derived from the matching context via a specified query.)_
+
+Recall that the public observation pool together with applied domain theories answers: **how is it?**
+
+Those queries can be combined into a formalization of the foundational question of social coordination:
+
+**what could we do | so we like it | in the future?**
+
+Which translates into scanning the corpus of _Proposals_ for action paths that increase the probability of _Wants_ being satisfied according to future observations.
+
+After desired action paths have been identified, users commit to them by signing the selected action path and publishing it as a _Commitment_. A commitment is an official statement of executing a specified act when the attached condition was satisfied by the latest observations.
+
+Then the subjects go ahead and actually do it accordingly, or they won't, depending in their final decision in the moment of the act. Subjects may purposefuly record evidence to later prove they caused certain economic activity.
+
+Wants are evaluated continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value, possibly from successful coordination. Unfulfilled critical wants are indicators of unsuccessful coordination taking place.
+
+## Coordination Markets
+
+Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
+
+Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
+
+Operations: commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
+
+Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption
+
+The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
+
+## Tokenomics
+
+Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
+
+The initial account balance is always at 1MVL/s. Rewards
+
+Derive optimal collective strategy from all peoples wants, and wants of wants (=morals, and further sanctions), commitments, dependency, power.
+
+Economists teach that money has three functions:
+
+- It is a means of exchange: it lets you confer power to others.
+- It is a store of value: it lets you delay the exercise of power in time.
+- It is a unit of account: it lets you measure many things by a common yardstick.
+
+The economy proposed here seperates these functions by solving them explicitly.
+
+Most economic theories are answereng those questions:
+
+- What is produced?
+- How is it produced?
+- How much is produced
+- For whom is it produced
+
+Further, each subject is related to one physical embodiment in the actual. By default, every subject with an active account is considered human and given the _Native Human Action Space_, assuming that no other life on earth is capable of using modern computer user interfaces.
 
 - Quantify causal influence on somebody or something on somebody or something
 - Good: Attribution of economic productivity (compared to inaction)
 - Informative: Quantifying power balances between people = as lever over people by actions in action space that positively or negatively influce other subjects.
-
 
 With all beings and things embedded in the geospatial process, it indexes humans, animals, physical items, and natural resources.
 
@@ -94,80 +178,6 @@ All wants of a single subject imply a priorization of all possible contexts, whe
 The wants of all subjects in the network, together with ex-ante conflict prevention, fairness selector, and legal rights, imply a priorization of the consensus context.
 
 Wants are transparent about how their fulfillment depends on observations, thus contributors can reason about what needs to get done in order to fulfill a want.
-
-Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
-
-## Coordination
-
-This section defines an abstract conversation to semi-automatically comunicate the wants of subjects, pointing to potential action paths, and declaring commitments to conditional actions. It is designed to coordinate on who does what.
-
-The conversation categorizes three types of messages:
-
-- **Wants**, answering: **how do we like it?**
-  
-  _(Represented as binary queries (fulfilled or not) in a given context.)_
-
-- **Proposals**, answering: **what could we do?**
-
-  _(Represented as changes (additions and removals) of commitments of one or more subjects.)_
-  
-- **Commitments**, answering: **what will we do?**
-
-  _(Represented as conditional actions. Conditions are either satisfied or not in a given context. The action choice is derived from the matching context via a specified query.)_
-
-Recall that the public observation pool together with applied domain theories answers: **how is it?**
-
-Those queries can be combined into a formalization of the foundational question of social coordination:
-
-**what could we do | so we like it | in the future?**
-
-Which translates into scanning the corpus of _Proposals_ for action paths that increase the probability of _Wants_ being satisfied according to future observations.
-
-After desired action paths have been identified, users commit to conditional actions by publishing _Commitments_. A commitment is an official statement of executing a specified act when the attached condition was satisfied by the latest observations.
-
-Then subjects go ahead and do it, or they won't, depending in their final decision in the moment of the act. Subjects may purposefuly record evidence to later prove they caused certain economic activity.
-
-Wants are evaluated continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value. Unfulfilled critical wants are indicators of failing coordination.
-
-## Coordination Markets
-
-Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption
-
-- Measure historic fulfillment of wants[+domains] on observations (realized value)
-- Estimate future fulfillment of wants[+domains] on latest observations (expected value). Estimation of EV is subject to the domains used for reasoning and assumptions about who will do what.
-- Given latest observations, current wants[+domains], and current commitments[+domains]: search through all possibilities and propose changes to commitments for one or more accounts
-- Evaluate all proposals and change to any plan that is more +EV.
-
-The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
-
-Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
-
-Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
-
-Operations: commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
-
-## Tokenomics
-
-Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
-
-The initial account balance is always at 1MVL/s. Rewards
-
-Derive optimal collective strategy from all peoples wants, and wants of wants (=morals, and further sanctions), commitments, dependency, power.
-
-Economists teach that money has three functions:
-
-- It is a means of exchange: it lets you confer power to others.
-- It is a store of value: it lets you delay the exercise of power in time.
-- It is a unit of account: it lets you measure many things by a common yardstick.
-
-The economy proposed here seperates these functions by solving them explicitly.
-
-Most economic theories are answereng those questions:
-
-- What is produced?
-- How is it produced?
-- How much is produced
-- For whom is it produced
 
 ## Example: Peer to Peer Ride Sharing
 
