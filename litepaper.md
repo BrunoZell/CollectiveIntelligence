@@ -42,36 +42,6 @@ Within the geospacial process we interconnect many domains of value, especially 
 
 Each account keeps track of: balances, resource consumption, wants, commitments, action traces
 
-## Coordination
-
-- Establish wants[+domains]
-- Measure historic fulfillment of wants[+domains] on observations (realized value)
-- Estimate future fulfillment of wants[+domains] on latest observations (expected value). Estimation of EV is subject to the domains used for reasoning and assumptions about who will do what.
-- Given latest observations, current wants[+domains], and current commitments[+domains]: search through all possibilities and propose changes to commitments for one or more accounts
-- Evaluate all proposals and change to any plan that is more +EV.
-
-### Wants
-
-Each want is a statement about: **how do we want it?**
-
-Wants are represented as binary queries, stating whether that want is fulfilled or not in a given context. These queries are composed from semantic query interfaces of domain models.
-
-The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
-
-### Proposals
-
-Each proposal is an answer to the question: **what could we do?**
-
-It is represented as changes to other peoples commitments.
-
-### Commitments
-
-Each commitment is a declaration of: **what will we do?**
-
-Commitments are represented as conditional actions. Conditions are either satisfied or not in a given context. The action derived from a matching context is then either executed or not based on the committers final behavior.
-
-Commiters are referred to via their network accounts and can relate to both beings and things.
-
 ## Economics
 
 Evaluating conditional actions from proposals and commitments yields an estimation of how reality expectedly is affected by it when compared to the inaction scenario.
@@ -103,7 +73,60 @@ Wants are transparent about how their fulfillment depends on observations, thus 
 
 Note on credible commitments: A declaration does not guarantee the committer to actualy do the action as declared. Commitments may come with a stake, reputation, or insurance to make it more credible to others, although the fundamental mechanism does not force any of it. It is assumed that people tend to pull through with their commitments to avoid sanctions of others (=change of other ppls actions that the faulty committer may not like) while keeping the economic balance on the economies they are part of.
 
+## Coordination
+
+This section defines an abstract conversation to semi-automatically comunicate the wants of subjects, pointing to potential action paths, and declaring commitment to conditional actions.
+
+The conversation categorizes three types of messages:
+
+- **Wants**, answering: **how do we like it?**
+  
+  _(Represented as binary queries (fulfilled or not) in a given context.)_
+
+- **Proposals**, answering: **what could we do?**
+
+  _(Represented as changes (additions and removals) of commitments of one or more subjects.)_
+  
+- **Commitments**, answering: **what will we do?**
+
+  _(Represented as conditional actions. Conditions are either satisfied or not in a given context. The action choice is derived from the matching context via a specified query.)_
+
+Recall that the public observation pool together with applied domain knowledge answers: **how is it?**
+
+Those queries can be combined into a formalization of the foundational question of social coordination:
+
+**what could we do | so we like it | in the future?**
+
+Which translates into scanning the corpus of _Proposals_ for action paths that increase the probability of _Wants_ being satisfied according to future observations.
+
+After desired action paths have been identified, users commit to conditional actions by publishing _Commitments_. A commitment is an official statement of executing a specified act when the attached condition was satisfied by the latest observations.
+
+Do it. Or not. Record evidence.
+
+Evaluate wants continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value.
+
 ## Coordination Markets
+
+- Measure historic fulfillment of wants[+domains] on observations (realized value)
+- Estimate future fulfillment of wants[+domains] on latest observations (expected value). Estimation of EV is subject to the domains used for reasoning and assumptions about who will do what.
+- Given latest observations, current wants[+domains], and current commitments[+domains]: search through all possibilities and propose changes to commitments for one or more accounts
+- Evaluate all proposals and change to any plan that is more +EV.
+
+The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
+
+Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
+
+Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
+
+Operations: commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
+
+## Tokenomics
+
+Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
+
+The initial account balance is always at 1MVL/s. Rewards
+
+Derive optimal collective strategy from all peoples wants, and wants of wants (=morals, and further sanctions), commitments, dependency, power.
 
 Economists teach that money has three functions:
 
@@ -119,20 +142,6 @@ Most economic theories are answereng those questions:
 - How is it produced?
 - How much is produced
 - For whom is it produced
-
-Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
-
-Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
-
-Operations: commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
-
-## Tokenomics
-
-Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
-
-The initial account balance is always at 1MVL/s. Rewards
-
-Derive optimal collective strategy from all peoples wants, and wants of wants (=morals, and further sanctions), commitments, dependency, power.
 
 ## Example: Peer to Peer Ride Sharing
 
