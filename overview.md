@@ -1,5 +1,21 @@
 # Ask Network Overview
 
+We are researching the viability of computer-mediated non-monetary economies in an effort to find more suitable mechanisms for global social coordination. Traditional coordination schemes like money, democracy, and organizations of various kinds seemingly are unable to remove current global challenges like wealth inequality, climate change, war, advertising, transaction inefficiencies, information asymetry, ect.
+
+By formalizing algorithmic trading we saw that financial markets may evolve into coordination markets, where action & effect in physical reality are negotiated semi-automatically within a shared data environment. It seems more pragmatic coordination can be uncovered once individual data silos are connected by a higher bandwidth than possible through price discovery. It also seems to tend towards positive-sum coordination due to efficiency gains from collaboration.
+
+## Comparison to other networks
+
+CRDT knowledge base:
+- Pretty much Convex Protocol without the VM and no account balances or fork choice rules;
+-> really it's just a Merkle Clock, with sequencing never yielding any conflicts.
+
+Want (Intent) Proposal (match) and matchmakers
+- pretty much Anoma except that no VM state changes are there except that of the messages themselves, which are append-only (although possibly signed by the author or HGTP-authenticated).
+-> Anoma VM public state and transaction execution model is replaced with user-defined causal-semantic models that specify just the assumed behavior of relevant reality (reason about observations and actions)
+
+All downstream causal-semantic model dependencies imply their own assumptions on reality (whether accurate or not), with the upstream dependants being somewhat on a mercy of them. Validity checks are local to the model.
+
 ## Three Layers of the Network
 
 1. Computable sensory-motor cycle to create and communicate representations of reality
@@ -75,10 +91,35 @@ strategy: cid<CollectiveStrategy>
 ## Domain Model
 
 ```fsharp
-type DomainModel = {
-    Causality: Cid<ScmDag>
-    Actions: ActionScmNodeType list
+module DomainModel<InterventionalNode, ObservationalNode, HiddenNode> = 
+
+/// This type represents the type-space of any causal node instances in a scene instance.
+type CausalNode =
+    | Interventional of InterventionalNode
+    | Observational of ObservationalNode
+    | Hidden of HiddenNode
+
+type CausalLink<'Message> = {
+    Receiver: IdOf<CausalNode> // A type constraint on the space of all possible observation-node[-types] in this domain module, to select a specific observation-subnode. It means all node instances that match this type selector will receive.
+    // Validation criteria: All selected types must be able to receive effects of 'Message
+
+    Producer: IdOf<CausalNode>
 }
+
+type ScmDag<'Message> = {
+    Nodes: CausalNode list
+    Effects: CausalLink<'Message>
+
+    InstantiateLinks =
+        // Todo: Iterate all links, for each: select producers & consumers and put a link between all of them (all selected consumers receive from all selected producers messages of type 'Message)
+        failwith ""
+}
+
+let instantiateScene : ContentId<ObservationPool> -> ScmDag =
+    // Todo: interpret & analyze ObservationPool according to domain-specific rules.
+    /// Then put it into this domains causal graph and return the instance that
+    /// descries the passed situation (ObservationPool).
+    failwith ""
 
 /// Defines an action space of somebody or something.
 /// Describes an action executed by somebody or something if instantiated.
@@ -97,9 +138,8 @@ type ObservationalNode = interface end
 type HiddenNode = interface end
 
 type ActionInitiation = {
-    Domain: ContentId<DomainModel>
-    Action: ContentId<ActionScmNodeType>
-    Payload: ContentId<[this.Action]>
+    Situation: ContentId<ObservationPool>
+    Action: ContentId<[DomainModule].[InterventionalNode]>
 }
 ```
 
