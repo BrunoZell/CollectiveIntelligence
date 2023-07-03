@@ -165,6 +165,16 @@ show how it is the next evolution in money/banking/finance.
 
 and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
 
+## Theoretical Foundations
+
+- Counterfactual reasoning with structural causal models (Judea Pearl).
+- Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data)
+- Consistent data migration between theories with Ologs
+- Information querying on the ologs with CQL (the Categorical Query Language)
+- Interoperable semantic annotations of olog objects with IEML (the Information Economy MetaLanguage)
+- Interoperability with virtual and actual reality (external blockchain networks and physical reality) with the HGTP data standard (Hypergraph Transfer Protocol)
+- Implementation of tokenomics on Constellation Network
+
 ## Next steps
 
 We are implementing the first version of this: First we implement a generalized +EV-Crawler with applications in algorithmic trading of electricity and crypto assets. Then we go on an implement the Ask Economy as a public network.
