@@ -12,7 +12,7 @@ Next, we create a strongly-typed conversation about (1) what we could do (propos
 
 Data is our window into reality. All data in Ask Network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
 
-Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data one must use sensors. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
+Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data, hardware sensors must be utilized. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
 ## Domains
 
@@ -32,25 +32,41 @@ Furthermore the network provides a continuous integration pipeline for domain mo
 
 This section describes the abstract domain of beings and things sharing both the same virtual cyberspace and the same actuality.
 
-Beings are individual living organisms, possibly self-conscious. In the actual they occur as the physical embodyment of that  organism. In the virtual they are represented as a _subject_.
+Beings are individual living organisms, possibly self-conscious. In the actual they occur as the physical embodyment of that  organism in the geospacial process. In the virtual they are represented as a _subject_.
 
 Things are persistent objects, usually with a certain behavior. In the actual, objects are characterized by their presence in the geospacial process. In the virtual, they are represented by (a) assumed causal behavior, and (b) an unlocked action set when the object is used as an instrument by a subject. Or (c) by a self-issued identity maintained by an embedded device, like a MAC address.
 
-- Action spaces in the virtual
 - Native human action space in the actual
 - Augmented human action space in the actual using objects as instruments
 - Acts vs actions
 - Acts as stochastic functional plan when viewed externally
 - Acts as condtional actions when viewed internally
-- Quantify causal influence on somebody or something
-- Power over people = potential actual causal influence over people
-- Attribution of effects to subjects or objects inferred from action traces (compared to inaction)
-
-Special emphasis lies on the geospatial process, which represents actual reality. This is where all actual economic production and consumption happens.
-
-With all beings and things embedded in the geospatial process, it indexes humans, animals, physical items, and natural resources.
+- Purely virtual object persistence: proof of authority or consensus
+- Action spaces in the virtual: communicating with external computer systems
 
 ## Economics
+
+This section analyzes the dynamics of subjects interacting with each other in the actual.
+
+The geospatial process is considered the representation of actuality. This is where all actual economic production and consumption happens, which is what the network accounts for.
+
+From the outside, all subjects are viewd as having a sensory motor cycle. That is:
+
+- Gossip-activity about Observation Pool
+- Accepted domain representations (used in queries to decide)
+- Decision function that maps the latest context to a `Decision = Inaction | Action<A>` (which implies a tendency towards certain outcomes)
+- A motor system that acts according to the subjects decision function
+
+Further, each subject is related to one physical embodiment in the actual. By default, every subject with an active account is considered human and given the _Native Human Action Space_, assuming that no other life on earth is capable of using modern computer user interfaces.
+
+Every analysis explicitly imports domain theories.
+
+- Quantify causal influence on somebody or something on somebody or something
+- Good: Attribution of economic productivity (compared to inaction)
+- Informative: Quantifying power balances between people = as lever over people by actions in action space that positively or negatively influce other subjects.
+
+
+With all beings and things embedded in the geospatial process, it indexes humans, animals, physical items, and natural resources.
 
 Evaluating conditional actions from proposals and commitments yields an estimation of how reality expectedly is affected by it when compared to the inaction scenario.
 
@@ -83,7 +99,7 @@ Note on credible commitments: A declaration does not guarantee the committer to 
 
 ## Coordination
 
-This section defines an abstract conversation to semi-automatically comunicate the wants of subjects, pointing to potential action paths, and declaring commitment to conditional actions.
+This section defines an abstract conversation to semi-automatically comunicate the wants of subjects, pointing to potential action paths, and declaring commitments to conditional actions. It is designed to coordinate on who does what.
 
 The conversation categorizes three types of messages:
 
@@ -99,7 +115,7 @@ The conversation categorizes three types of messages:
 
   _(Represented as conditional actions. Conditions are either satisfied or not in a given context. The action choice is derived from the matching context via a specified query.)_
 
-Recall that the public observation pool together with applied domain knowledge answers: **how is it?**
+Recall that the public observation pool together with applied domain theories answers: **how is it?**
 
 Those queries can be combined into a formalization of the foundational question of social coordination:
 
@@ -109,9 +125,9 @@ Which translates into scanning the corpus of _Proposals_ for action paths that i
 
 After desired action paths have been identified, users commit to conditional actions by publishing _Commitments_. A commitment is an official statement of executing a specified act when the attached condition was satisfied by the latest observations.
 
-Do it. Or not. Record evidence.
+Then subjects go ahead and do it, or they won't, depending in their final decision in the moment of the act. Subjects may purposefuly record evidence to later prove they caused certain economic activity.
 
-Evaluate wants continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value.
+Wants are evaluated continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value. Unfulfilled critical wants are indicators of failing coordination.
 
 ## Coordination Markets
 
