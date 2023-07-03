@@ -12,11 +12,11 @@ Next, we create a strongly-typed conversation about (1) what we could do (propos
 
 Data is our window into reality. All data in Ask Network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
 
-Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. For that there are sensors. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
+Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data one must use sensors. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
 ## Theories
 
-That message history is used to derive reproducible representations of the actual and virtual external world. Such reproducible representations are specified as causal-semantic models [and data consistency constraints as ologs] that take observations as input, and derive conclusions about the external world.
+That message history is used to derive reproducible representations of the actual and virtual external world. Such reproducible representations are specified as causal-semantic models that take observations as input, and derive conclusions about the external world.
 
 One can instantiate a causal graph by integrating observations into the assumed causal relationships, producing a context. On that context, it can be reasoned backwards in time (I observed this, therefore that must have happened), and forwards in itme (if I do this, expectedly that will happen).
 
@@ -26,7 +26,7 @@ Domain modellers combine interpretation, authentication, causal assumptions, and
 
 Specifying interpretations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
 
-## Network of Subjects and Objects
+## Subjects and Objects
 
 Each account keeps track of: balances, resource consumption, wants, commitments, action traces
 
