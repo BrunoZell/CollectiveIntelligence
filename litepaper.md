@@ -165,7 +165,16 @@ match with committed drivers:market maker propose order form of a service that e
 
 ## Positioning Ask Network
 
-briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention: Bartering, debt, commodity money, bank notes, central banks, first ERMA computer, clearinghouse systems (automatic payments and ATM transactions), SWIFT.
+briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
+
+- Debt and dependence on trust
+- Bartering and double concidents of wants
+- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
+- First bank notes
+- Central banks
+- first ERMA computer
+- clearinghouse systems (automatic payments and ATM transactions)
+- SWIFT
 
 Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
 
