@@ -80,3 +80,16 @@ Once multiple transactions between individuals happen, we get the same temporal 
 But interrestingly, a dice roll has aversions for both 0% adn 100% as the choice of case is totally random. With a mean over an infinite amount of dice roals the sum tends to 3n, where n is the amount of dies and a mean of 3 considering a six-sided dice.
 
 Instead of a perfectly random choice of case, lets consider a chose of case that is dictated by the economic decision of a subject with some total amount of purchasing power, and all economic offers available to him. And let's consider that there is a dice roll for each possible set of two-party transactions in the economy (money going from sender to receiver) account balance.
+
+The Angle Process utilizes a system of pairwise monetary transactions, where random pairs of economic agents engage in transactions, with the result of each transaction being a random division of the sum of the two agents' wealth prior to the transaction. Over time, this process tends to result in a stable income distribution that is modeled by the gamma distribution.
+
+The gamma distribution is the same for all economies at scale that utilize pairwise transactions among a collection of economic agents, which could be individuals, households, companies, funds or other entities.
+
+Wealth moves from one economic agent to another when the former makes a mistake in an economic exchange. If the amount paid exactly equals what the received service is worth, then no wealth is exchanged. But if one person overpays or if the other accepts less than the services worth, some wealth is transferred between them. Practically speaking, because you can't buy sth for more money than you have, lets assume that the amount that potentially could be lost in a transaction is some fraction of the wealth of the poorer person. If enough transactions where made, even if totally random, all wealth will eventually fall into the hands of a single individual as more and more exchange mistakes are made over time.
+
+
+Bottom line: The more pairwise transactions we do (as we have scalled enourmously over the last 50 years with computers) over time, the faster we will see wealth inequality increase up to an oligarchy if the economy survives until that point.
+
+Solution: Structurally quantify the mispricing (amount of mistake in an economic exchange: 1 or 2). Or at least build an economy where it tends towards zero: Account for what actual service exchanged hands (basically the receipt) and price it relative to all alternative economic possibilities in the economy.
+
+It is only redistribution that sets limits on inequality.
