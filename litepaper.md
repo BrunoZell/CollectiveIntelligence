@@ -22,33 +22,50 @@ At each domains core lies a causal graph. One can instantiate a causal graph by 
 
 Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Nodes in the causal graphs carry semantically computable annotations in IEML[1]. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combined with the domains semantic annotations in the formulation of the query.
 
-Domain modellers combine observation procedures, interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of domains that further can be used to facilitate efficient and effective social coordination.
+Domain modellers combine observation procedures, interpretation, authentication, structured data models, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of domains that further can be used to facilitate efficient and effective social coordination.
 
 Specifying representations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
 
 Furthermore the network provides a continuous integration pipeline for domain modellers by testing their causal theories against real world data[2: by connecting to HGTP L0].
 
-## Subjects, Objects, and Actions
+## Network of Beings and Things
 
-This section describes the abstract domain of beings and things sharing both the same virtual cyberspace and the same actuality.
+The creators of Ask Network are set out to create a new way to facilitate social coordination. Observing the real world and reasoning about what happened and what could happen are necessary foundations. This section describes ubiquitus abstractions that further are used to coordinate. It is bridging arbitrary domains of world representations with fundamental concepts used in social coordination, around which the network is being designed throughout the rest of this work.
 
-Beings are individual living organisms, possibly self-conscious. In the actual they occur as the physical embodyment of that  organism in the geospacial process. In the virtual they are represented as a _subject_.
+Semantic annotations of nodes in a causal graph are expressed in IEML, which inherently puts them on the same map of conceptualization.
 
-Things are persistent objects, usually with a certain behavior. In the actual, objects are characterized by their presence in the geospacial process. In the virtual, they are represented by (a) assumed causal behavior, and (b) an unlocked action set when the object is used as an instrument by a subject. Or (c) by a self-issued identity maintained by an embedded device, like a MAC address.
+The knowledge representation scheme used allows to translate data between different perspectives. Usually this is done through an intermediate representation that can represent data from both source and target perspective, and a user-provided mapping between them.
 
-- Native human action space in the actual
-- Augmented human action space in the actual using objects as instruments
-- Acts vs actions
-- Acts as stochastic functional plan when viewed externally
-- Acts as condtional actions when viewed internally
-- Purely virtual object persistence: proof of authority or consensus
-- Action spaces in the virtual: communicating with external computer systems
+For Ask Network, the most important concepts are the virtual with subjects, objects, actions, and knowledge. Also there is the actual with physical bodies, all interconnected through physical laws that govern the geospacial process between them.
+
+Some bodies in the actual are the physical embodyment of santient individuals posessing a sensory-motor cycle. That is, they (a) have capacity to observe their presence in space through perception instruments such as eyes and ears, (b) a mental capacity to interpret obtained sensory information and reason about possible actions, and (c) a motor system to act within the geospacial process to change the state of things.
+
+<p>
+<details>
+<summary>[On Authentication]</summary>
+Such individuals can relate oneself to their virtual representation as a subject by means of authentication. The network does not impose any such authentication mechanisms. Mapping measured actual bodies to their virtual representations is freely defined in domain models.
+</details>
+</p>
+
+What makes human individuals special is that they posess the ability to communicate through language. This can happen in the actual through verbal communication or written signs, and also in the virtual through usage of the internet and its algorithmic medium. Smart devices with embedded computers that connect to the internet also have this capability.
+
+Such ability to access the virtual makes them capable of incorporating information from far away or from the distant past into their decision making process. In that view, the internet acts as a global nervous system that connects many distanced points in space through virtual message exchange. Since humans or connected devices can act based on that information, this creates a very real causal connection between distant points in space.
+
+Beings and things can act and impose causal influence on each other. Furthermore, beings can use things as instruments, thereby augmenting their action space to some degree. For example, a person can enter a car to make the act of driving down the road available to him.
+
+Notably, also purely virtual objects can meaninguflly persist by means of stable databases. Such databases are either manually maintained and accessible through authoritative APIs, or they are maintained through open consensus protocols. Even though the message exchange between networked computers still is volatile, repeated queries can come back with the same answer. Examples of virtual objects are one addresses Bitcoin balance staying the same (assuming no new transfers), or an account balance on a crypto exchange staying constant (assuming no activity and a trustworthy operator).
 
 ## Economics
 
 This section analyzes the dynamics of subjects interacting with each other in the actual.
 
-Every analysis explicitly imports domain theories.
+Differentiate acts and actions (as Judea Pearl does with his structural causal models)
+
+View a subjects strategy as stochastic functional plans producing acts when viewed externally, derived from his commitments but being conscious about a commitment not being a deterministic guarantee.
+
+View a subjects strategy as condtional actions when viewed internally
+
+Every analysis of observations, decisions, plans, and actions explicitly reference domains and all conclusions are subject to the same assumptions as the domain model.
 
 The geospatial process is considered the representation of actuality. This is where all actual economic production and consumption happens, which is what the network accounts for.
 
