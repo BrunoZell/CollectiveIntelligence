@@ -54,13 +54,11 @@ Humans can authenticate themselves by claiming spots on the economic social grap
 
 This section analyzes the dynamics of active participants interacting with each other. First we'll analyze interaction in the actual, and then show how communication in the virtual gives rise to coordinating such interactions so that everyone is better off.
 
-From here onwards, we call an active economic participant an agent. Further, let's call all agents that are beings _subjects_, and all agents that are things _objects_.
+From here onwards, we call an active economic participant an _agent_. Further, let's call all agents that are beings _subjects_, and all agents that are things _objects_.
 
-Furthermore we assume all agents aim to optimize desires and aversions of their own choice. We refer to this as a subjects or objects _wants_.
+Furthermore we assume all agents aim to optimize desires and aversions of their own. We refer to such an aim as the subjects or objects _wants_.
 
-Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_.
-
-Differentiate acts and actions (as Judea Pearl does with his structural causal models)
+Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_. What the agent ended up doing is called his _acts_.
 
 View a subjects strategy as stochastic functional plans producing acts when viewed externally, derived from his commitments but being conscious about a commitment not being a deterministic guarantee.
 
