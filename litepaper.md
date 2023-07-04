@@ -20,44 +20,45 @@ That message history is used to derive reproducible representations of the actua
 
 At each domains core lies a causal graph. One can instantiate a causal graph by integrating observations into explicitly assumed causal relationships, producing a context. On that context, it can be reasoned backwards in time (I observed this, therefore that must have happened), and forwards in itme (if I do this, expectedly that will happen).
 
-Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Nodes in the causal graphs carry semantically computable annotations in IEML[1]. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combined with the domains semantic annotations in the formulation of the query.
+Once conclusions about hidden variables or counterfactuals where made, they can be queried through a semantic query interface. Nodes in the causal graphs carry semantically computable annotations in IEML. Queries are standard CQL expressions on the uniform data model of a semantic-causal context, combined with the domains semantic annotations in the formulation of the query.
 
-Domain modellers combine observation procedures, interpretation, authentication, structured data models, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of domains that further can be used to facilitate efficient and effective social coordination.
+Domain modellers combine observation procedures, interpretation, authentication, causal assumptions, and semantic annotations into interoperable domain modules, producing an ever growing library of domains that model reality increasingly accurate.
 
 Specifying representations of reality in standardized and thus interoperable causal-semantic models enables transferrable reasoning about the behavior of virtual and actual external systems (hidden variables), and unobserved but possible observations or actions (counterfactuals).
 
-Furthermore the network provides a continuous integration pipeline for domain modellers by testing their causal theories against real world data[2: by connecting to HGTP L0].
+Furthermore, the network provides a continuous integration pipeline for domain modellers by testing their causal theories against real world data.
+
+Essentially it is an accounting system for everything measurable, with an attached unambiguous reasoning machine for everything unmeasurable.
 
 ## Network of Beings and Things
 
-The creators of Ask Network are set out to create a new way to facilitate social coordination. Observing the real world and reasoning about what happened and what could happen are necessary foundations. This section describes ubiquitus abstractions that further are used to coordinate. It is bridging arbitrary domains of world representations with fundamental concepts used in social coordination, around which the network is being designed throughout the rest of this work.
+Expressing semantic annotations in IEML ensures that all conceptualization has exact positions in the semantic sphere, which allows for rich analysis across domains.
 
-Semantic annotations of nodes in a causal graph are expressed in IEML, which inherently puts them on the same map of conceptualization.
+Most importantly for social coordination is the identification of beings and things, with all of them being embedded in the same physical reality, although at different positions in the geospatial process. What follows is a virtual representation of the actual economy that is acted out, through which past economic activity can be analyzed and future economic activity arranged.
 
-The knowledge representation scheme used allows to translate data between different perspectives. Usually this is done through an intermediate representation that can represent data from both source and target perspective, and a user-provided mapping between them.
+Let us first differentiate economic participants from everything else. An economic participant is everything and everybody that influences voluntary participants to a degree that the influenced participant accounts for. Essentially it's the set of everything that is directly or indirectly important to at least one voluntary participant, with voluntary participant referring to a being that uses Ask Network to coordinate.
 
-For Ask Network, the most important concepts are the virtual with subjects, objects, actions, and knowledge. Also there is the actual with physical bodies, all interconnected through physical laws that govern the geospacial process between them.
+Let us further differentiate between passive and active  participants:
 
-Some bodies in the actual are the physical embodyment of santient individuals posessing a sensory-motor cycle. That is, they (a) have capacity to observe their presence in space through perception instruments such as eyes and ears, (b) a mental capacity to interpret obtained sensory information and reason about possible actions, and (c) a motor system to act within the geospacial process to change the state of things.
+Passive participants are things with no behavior of their own other than the natural laws that govern their physical body. Desired things are economic goods (for example, a glass of wine) whereas undesired things are economic costs (like waste).
 
-<p>
-<details>
-<summary>[On Authentication]</summary>
-Such individuals can relate oneself to their virtual representation as a subject by means of authentication. The network does not impose any such authentication mechanisms. Mapping measured actual bodies to their virtual representations is freely defined in domain models.
-</details>
-</p>
+Active participants are those beings or things that operate a sensory-motor cycle and posess decision making abilities over their action space. Senses (like eyes and ears) or sensors (like cameras or microphones) on their body are employed to capture sensory information, which further is interpreted and reasoned about with their mental capacity, and finally acted out in their motor system (like legs or electric motors). Notably, such a situational awareness implies each active participant has certain desires and aversions, regardless of them being self-conscious or not. Picking one action over another always comes with a tradeoff about what has happened and what could have happened.
 
-What makes human individuals special is that they posess the ability to communicate through language. This can happen in the actual through verbal communication or written signs, and also in the virtual through usage of the internet and its algorithmic medium. Smart devices with embedded computers that connect to the internet also have this capability.
+Now let's distinguish between communicating and silent participants. Communicating participants are those that have mastered languages to a degree that allows them to communicate with other speakers of the language in use, whereas silent participants can't. Communicating participants are first of all humans, and second of all smart things with embedded computers that communicate through networking protocols.
 
-Such ability to access the virtual makes them capable of incorporating information from far away or from the distant past into their decision making process. In that view, the internet acts as a global nervous system that connects many distanced points in space through virtual message exchange. Since humans or connected devices can act based on that information, this creates a very real causal connection between distant points in space.
+We identify a human as every communicating participant which is not labeled as a thing. Simply because we haven't yet observed any animal being able to make use of internet protocols.
 
-Beings and things can act and impose causal influence on each other. Furthermore, beings can use things as instruments, thereby augmenting their action space to some degree. For example, a person can enter a car to make the act of driving down the road available to him.
-
-Notably, also purely virtual objects can meaninguflly persist by means of stable databases. Such databases are either manually maintained and accessible through authoritative APIs, or they are maintained through open consensus protocols. Even though the message exchange between networked computers still is volatile, repeated queries can come back with the same answer. Examples of virtual objects are one addresses Bitcoin balance staying the same (assuming no new transfers), or an account balance on a crypto exchange staying constant (assuming no activity and a trustworthy operator).
+Humans can authenticate themselves by claiming spots on the economic social graph. Smart things can authenticate themselves with an onboard private key.
 
 ## Economics
 
-This section analyzes the dynamics of subjects interacting with each other in the actual.
+This section analyzes the dynamics of active participants interacting with each other. First we'll analyze interaction in the actual, and then show how communication in the virtual gives rise to coordinating such interactions so that everyone is better off.
+
+From here onwards, we call an active economic participant an agent. Further, let's call all agents that are beings _subjects_, and all agents that are things _objects_.
+
+Furthermore we assume all agents aim to optimize desires and aversions of their own choice. We refer to this as a subjects or objects _wants_.
+
+Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_.
 
 Differentiate acts and actions (as Judea Pearl does with his structural causal models)
 
@@ -76,9 +77,9 @@ From the outside, all subjects are viewd as having a sensory motor cycle. That i
 - Decision function that maps the latest context to a `Decision = Inaction | Action<A>` (which implies a tendency towards certain outcomes)
 - A motor system that acts according to the subjects decision function
 
-Each subject is assumed to do whatever it wants at any given moment as the default strategy.
+Each active participant is assumed to do whatever it wants at any given moment as the default strategy.
 
-But subjects may influence each other with their acts, positively or negatively. This soon will give rise to coordination between subjects.
+But beings and things may influence each other with their acts, positively or negatively. This soon will give rise to coordination between subjects.
 
 For that, subjects communicate a shared world view via digital communication networks, and negotiate social coordination directly. A general scheme for such a conversation is layed out in the next section.
 
