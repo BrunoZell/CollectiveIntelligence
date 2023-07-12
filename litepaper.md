@@ -127,9 +127,19 @@ Wants are evaluated continuously on all observations as a measure for economic h
 
 ## Coordination Markets
 
-This section defines an _offer_, which essentially is a futures product with physical delivery taken care of by a _service provider_. An offer standardizes the ordering process of production and how the productive output is specified.
+Coordination schemes combine commitments (I [commit to] do this if I observe that) into commitments that are conditioned on (a) other commitments (I [commit to] do this if [I observe] you commit to that). Assuming commitments to be followed, it translates into "I do this if you do that", subject to the actual decisions (derived from their actual wants, possibly different than their declared wants) each agent acts on.
+
+Further we define an _offer_ as a parameterizable commitment scheme that essentially represents a futures product with physical delivery taken care of by a _service provider_. An offer standardizes ordering of the offered productive output and guides the process of production, delivery, and settlement.
 
 An offer is specified by a coordination scheme a service provider commits to, which defines what commitments are entered when a deal is closed to then orchestrate production and delivery. A coordination scheme is defined as conditional commitments, in the form of "I commit to this if I observe that", where the observations are incoming orders (from consumers) and acknowledged deals (from the referenced service provider).
+
+Conditional commitments (different from the condition on the action in the commitment itself) can be either conditioned on (a) the conditional action of other commitments, (b) the expected abstract effect of the other commitments conditional actions, or (c) declared wants of others resulting in automatic services useful for subscription services, or (d) on proposals that yield a certain (typically desired) effec
+
+Further, coordination schemes can conditon commitments on published action traces, which describe what act actually happened. The condition of the commitment may not be able to measure directly or is not available to whoever is interested in it, but the form of an acts evidence (action trace) can be aligned on upfront, with the actor commiting to publishing the according action trace, otherwise counter-actions may be triggered by whoever desires the action to have happened.
+
+Action traces are published either by the account owner to provide evidence of an act. Coordination schemes may require to post action traces to be fulfilled. Also accounts can submit action traces of other economic participants. That can be non-communicating participants or passive participants who don't have the ability to post an action trace of their own, or the action trace is evidence for value destruction which could trigger commitments of still other active participants which aim to counter-act that value destruction (examples are settlement procedures for failed deliveries or a police force protecting the wants of agents.
+
+Also, commitments that depend on other commitments can be automatically committed once all upstream dependencies are committed. This mechanic of "committing to something if you commit to something" is understood by the network and opens up the space of commitment negotiations. Since commitments are virtually binding, a recursive commitment is a form of binding intent, with all virtual stake attached to the commitment possibly being a bounty on matching complementary commitments, with complementary commitments referring to those commitments who, when committed, would lead to the dependant being committed immediately too.
 
 The uniform nature of service offerings allow for an efficient generalized matchmaking algorithm that crawls orders made possible by active service offerings that would fulfill active wants in case of a successful delivery.
 
@@ -151,8 +161,6 @@ Each voluntary participant of coordination markets creates a permissionless acco
 Wants and commitments are explicitly updated by the account owner, with each account having a set of active wants and another set of active commitments.
 
 The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
-
-Action traces are published either by the account owner to provide evidence of an act. Coordination schemes may require to post action traces to be fulfilled. Also accounts can submit action traces of other economic participants. That can be non-communicating participants or passive participants who don't have the ability to post an action trace of their own, or the action trace is evidence for value destruction which could trigger commitments of still other active participants which aim to counter-act that value destruction (examples are settlement procedures for failed deliveries or a police force protecting the wants of agents.
 
 Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
 
@@ -209,6 +217,12 @@ All wants of a single subject imply a priorization of all possible contexts, whe
 The wants of all subjects in the network, together with ex-ante conflict prevention, fairness selector, and legal rights, imply a priorization of the consensus context.
 
 Wants are transparent about how their fulfillment depends on observations, thus contributors can reason about what needs to get done in order to fulfill a want.
+
+Define work as undesirable time spent. Declared vs real values.
+
+Show matrix of human work. The show how coordination can decrease total work, shift work from one person to another (like building a washing machine).
+
+Derive case-tree from all commitments: If people do it don't follow commits, usual inaccuracies or derivations in action execution: show what might happen. Especially evaluate how other people will react to you doing or not doing certain things. Essentially showing you the practical ramifications of your decisions which takes the burden off from you to understand the social contract and just shows you how your values are effected by the actions of all affecting agents.
 
 ## Example: Peer to Peer Ride Sharing
 
