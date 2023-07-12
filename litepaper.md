@@ -158,6 +158,7 @@ Tokenomics are defined in terms of service offerings as defined in the previous 
 
 Observations: pay per entropy
 Domains: pay per reduction in surprise x useful economic activity caused (=used in completed deals):
+
 - historically: immediately, relative to theories that have been improved upon
 - future: pay/deal, gradually decreased based on how quickly it is replaced by newer theories
 proposals + deals: payment through commitment negotiations, whatever you can get from others.
@@ -315,6 +316,7 @@ Do whatever you want, as long as everybody is cool with it: We need a verificati
 This mechanisms also serves as a identification and verification of successful-delivery% for any action plan. Considering everything we don't know which has assumed causal mechanisms the user subscribes to (=the domain models he's okay with to reason through, usually science and his own political/societal ego.
 
 Feel free to ask, look out for a response, but don't expect a change in behavior: In the sense of actions: You can ask somebody to do something or don't do something, or do something differently. They may answer to your request with counter-asks which would change their minds, although it's up to them to communicate or not. Multiple Ask-rounds essentially are direct negotiations of social coordination.
+
 ## Theoretical Foundations
 
 - Counterfactual reasoning with structural causal models (Judea Pearl).
