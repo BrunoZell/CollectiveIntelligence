@@ -156,6 +156,12 @@ Tokenomics are defined in terms of service offerings as defined in the previous 
 - Have service providers committing to causing successful deliveries of products that are wanted
 - Have operating solvers who actively find and propose proposals.
 
+Observations: pay per entropy
+Domains: pay per reduction in surprise x useful economic activity caused (=used in completed deals):
+- historically: immediately, relative to theories that have been improved upon
+- future: pay/deal, gradually decreased based on how quickly it is replaced by newer theories
+proposals + deals: payment through commitment negotiations, whatever you can get from others.
+
 Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption.
 
 Wants and commitments are explicitly updated by the account owner, with each account having a set of active wants and another set of active commitments.
