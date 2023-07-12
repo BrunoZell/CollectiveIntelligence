@@ -127,17 +127,32 @@ Wants are evaluated continuously on all observations as a measure for economic h
 
 ## Coordination Markets
 
-Standardizing ordering of production and productive output via (potentially unsuccessful) physical delivery.
+This section defines an _offer_, which essentially is a futures product with physical delivery taken care of by a _service provider_. An offer standardizes the ordering process of production and how the productive output is specified.
 
-Create commitment schemes implementing the abstract product structure, to be picked up by the generalized matchmaking algorithm that crawls possible action paths for desired outcomes.
+An offer is specified by a coordination scheme a service provider commits to, which defines what commitments are entered when a deal is closed to then orchestrate production and delivery. A coordination scheme is defined as conditional commitments, in the form of "I commit to this if I observe that", where the observations are incoming orders (from consumers) and acknowledged deals (from the referenced service provider).
 
-Operations: commitments and work; instatiations of commitment schemes with actual people and things commiting to offering a service.
+The uniform nature of service offerings allow for an efficient generalized matchmaking algorithm that crawls orders made possible by active service offerings that would fulfill active wants in case of a successful delivery.
 
-Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption
+Operations refers to instatiations of commitment schemes, which are actual people and things commiting to offering a service.
+
+## Tokenomics
+
+Goals:
+
+- Generate proposals that increases the probability of wants being fulfilled if the proposed commitments are actually committed to.
+
+Tokenomics are defined in terms of service offerings as defined in the previous section. So:
+
+- Have service providers committing to causing successful deliveries of products that are wanted
+- Have operating solvers who actively find and propose proposals.
+
+Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption.
+
+Wants and commitments are explicitly updated by the account owner, with each account having a set of active wants and another set of active commitments.
 
 The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
 
-## Tokenomics
+Action traces are published either by the account owner to provide evidence of an act. Coordination schemes may require to post action traces to be fulfilled. Also accounts can submit action traces of other economic participants. That can be non-communicating participants or passive participants who don't have the ability to post an action trace of their own, or the action trace is evidence for value destruction which could trigger commitments of still other active participants which aim to counter-act that value destruction (examples are settlement procedures for failed deliveries or a police force protecting the wants of agents.
 
 Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
 
@@ -244,6 +259,18 @@ show how it eliminates most of these problems, and goes back to trusted personal
 show how Ask Network is the next evolution in money/banking/finance.
 
 and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
+
+## Guiding Principles
+
+There are three guiding principles every active participant is asked to follow to get the most value out of the network:
+
+1. Do whatever you want, as long as everybody is cool with it.
+2. Feel free to ask, then look out for an answer.
+3. Don't expect a change in behavior.
+
+If you are about to do an act for which you are not sure you won't negatively effect anyone, you shall use the Wants Verification function. You can privately check any action against other contributors wants and see whether your act would cause other contributors wants to turn unfulfilled.
+
+Further, it privately proposes to you what you could to instead in order to fulfill your wants while not
 
 ## Theoretical Foundations
 
