@@ -162,6 +162,15 @@ Domains: pay per reduction in surprise x useful economic activity caused (=used 
 - future: pay/deal, gradually decreased based on how quickly it is replaced by newer theories
 proposals + deals: payment through commitment negotiations, whatever you can get from others.
 
+At some point, some participants may feel happy with a proposed alternative action path.
+[this is where ask Network comes in to play the role of a mediator, especially across time (pay salary now from treasury, sell product later on, leaving to time-sensitive risk other than that of the economy to the worker. Those risks would carry entrapreneurs nowadays, but must not be carried at all by an Ask Network contributor. Essentially everybody is now selft employed and enjoys those benefits, but without additional accounting (data exports into various jurisdictions can be automated) and no risk of bankruptcy (risk is taken by the networks onchain +EV-selectoror, compensate by the economic value of the produce that the network auctions off to other active economic participants (agents)), and capital (you can use the networks treasury to bridge the production<>consumption capital requirements and fees like €25k for a GmbH is lender to you by the network, and further monitored by standard online banking HTTPS session captures to monitor the usage of the network funds.
+
+MVLs are freely sellable. The network auctions them off (with price control to raise money for development) to acquire a treasury, and pay contributors at the point of the gift act, with the network "speculating" on that acts economic productivity which the network is free to sell at a later point in time to somebody else. This treasury basically bridges the gap of production<>consumption, with costs accuring during production (by possibly many actors or organizations along the value chain).
+
+subsidized tipping: every MVL that is actually consumed has a certain amount of subsidized tips available to him. During production, delivery, and after delivery you can rate the service and optionally annotate with what you liked about it. Negative ratings pay nothing to nobody. Positive ratings pay a tip to the immediate service provider and to workers down the value chain. The distribution is equal with most weight to the servant, then downwards the chain decreasing, but can be customized by an annotation about what you liked and disliked, which then is attributed to the teams of the individual deals that made the service possible.
+
+Vertical integration is more cost effective: you share the cash buffer, risk of final valuation of produce, and all coordinate to achieve a shared goal (otherwise there wouldn't be a sustainable organization running full vertical production for a given product)
+
 Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption.
 
 Wants and commitments are explicitly updated by the account owner, with each account having a set of active wants and another set of active commitments.
@@ -230,6 +239,16 @@ Show matrix of human work. The show how coordination can decrease total work, sh
 
 Derive case-tree from all commitments: If people do it don't follow commits, usual inaccuracies or derivations in action execution: show what might happen. Especially evaluate how other people will react to you doing or not doing certain things. Essentially showing you the practical ramifications of your decisions which takes the burden off from you to understand the social contract and just shows you how your values are effected by the actions of all affecting agents.
 
+(Political) governance biases induced by the technical architecture of Ask Network:
+a) In support of this goal, transparency of online processes seems a sine qua non. In particular, but not only, I am aiming at a clear, brief and natural language description of AI training algorithms and data. (optimization goals (wants), and the +EV-optimizatiion process is explicitly reasoned about and can be automatically described in natural languages, like the why of a decision)
+b) Following the example of Wikimedia, let us strive to maximize the knowledge commons. (maximizing entropy on the knowledge base)
+c) Let’s open up the data sets and algorithms along the lines of the free software movement. (=domain models must be executably open sourced to be used, like smart contracts)
+d) Let’s ensure the practical and legal sovereignty of individuals and groups over the data they produce. (permissionlessness nature, everybody can get a new account no problem, made possible by not requiring more than one MVL to get everything you need (so marginal benefit of a second MVL in your account approaches zero by analyzing the social graph and identify distinct humans), but it still has marginal value to people with less than 1MVL or people who want a new account without economic history (their economic credit and debt they may want to escape from))
+e) Finally, let’s decentralize the governance of online interactions by promoting consensual procedures. The social movement that supports the blockchain indicates a possible path here. (ex-ante conversation about wants, proposals, and commitments; only commit when there is consensus.Along with technical crypto-economic consensus about the underlying raw data base)
+
+essentially it comes down to small, immediate gates (locking the door of your apartment, watching your bags, locking your car, having a 1m people-free sphere around you).
+What the network gets rid of are large scale gates, because coordination liquidity is globally liquid and everyone thus has paid "taxes" in every place that.
+
 ## Example: Peer to Peer Ride Sharing
 
 show domain models used: cars, drivers, pickup, street navigation, pickup, dropoff, working schedule, smartphone usage
@@ -292,6 +311,10 @@ If you are about to do an act for which you are not sure you won't negatively ef
 
 Further, it privately proposes to you what you could to instead in order to fulfill your wants while not
 
+Do whatever you want, as long as everybody is cool with it: We need a verification function for that. Any action can be evaluated against latest observations+domains and all active asks (wants) in the network, so you can (locally in private and publicly in EV-Selection) verify that everybody is cool with what you're about to do.
+This mechanisms also serves as a identification and verification of successful-delivery% for any action plan. Considering everything we don't know which has assumed causal mechanisms the user subscribes to (=the domain models he's okay with to reason through, usually science and his own political/societal ego.
+
+Feel free to ask, look out for a response, but don't expect a change in behavior: In the sense of actions: You can ask somebody to do something or don't do something, or do something differently. They may answer to your request with counter-asks which would change their minds, although it's up to them to communicate or not. Multiple Ask-rounds essentially are direct negotiations of social coordination.
 ## Theoretical Foundations
 
 - Counterfactual reasoning with structural causal models (Judea Pearl).
