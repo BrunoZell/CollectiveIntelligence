@@ -64,10 +64,6 @@ Each agent is assumed to do whatever it wants at any given moment as the default
 
 For that, subjects communicate a shared world view via digital communication networks, and negotiate social coordination directly. A general scheme for such a conversation is layed out in the next section.
 
-The geospatial process is considered the representation of actuality. This is where all actual economic production and consumption happens, which is what the network directly or indirectly accounts for.
-
-From the outside, all agents are viewed as having a sensory-motor cycle. That is: Gossip-activity about observations, with certain domain models being used to interpret them and evaluate queries which results are used in a decision function that decides on what acts should be forwarded to the agents motor system.
-
 ## Coordination
 
 This section defines an abstract conversation to semi-automatically negotiate social coordination directly in terms of conditional actions (_"I do this if I observe that"_), from which then commitment schemes are constructed (_"I do this if you do that"_).
