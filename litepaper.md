@@ -60,26 +60,13 @@ Furthermore we assume all agents aim to optimize desires and aversions of their 
 
 Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_. What the agent ended up doing is called his _acts_.
 
-View a subjects strategy as stochastic functional plans producing acts when viewed externally, derived from his commitments but being conscious about a commitment not being a deterministic guarantee.
-
-View a subjects strategy as condtional actions when viewed internally
-
-Every analysis of observations, decisions, plans, and actions explicitly reference domains and all conclusions are subject to the same assumptions as the domain model.
-
-The geospatial process is considered the representation of actuality. This is where all actual economic production and consumption happens, which is what the network accounts for.
-
-From the outside, all subjects are viewd as having a sensory motor cycle. That is:
-
-- Gossip-activity about Observation Pool
-- Accepted domain representations (used in queries to decide)
-- Decision function that maps the latest context to a `Decision = Inaction | Action<A>` (which implies a tendency towards certain outcomes)
-- A motor system that acts according to the subjects decision function
-
-Each active participant is assumed to do whatever it wants at any given moment as the default strategy.
-
-But beings and things may influence each other with their acts, positively or negatively. This soon will give rise to coordination between subjects.
+Each agent is assumed to do whatever it wants at any given moment as the default strategy. But beings and things may influence each other with their acts, positively or negatively. This soon will give rise to coordination between subjects.
 
 For that, subjects communicate a shared world view via digital communication networks, and negotiate social coordination directly. A general scheme for such a conversation is layed out in the next section.
+
+The geospatial process is considered the representation of actuality. This is where all actual economic production and consumption happens, which is what the network directly or indirectly accounts for.
+
+From the outside, all agents are viewed as having a sensory-motor cycle. That is: Gossip-activity about observations, with certain domain models being used to interpret them and evaluate queries which results are used in a decision function that decides on what acts should be forwarded to the agents motor system.
 
 ## Coordination
 
