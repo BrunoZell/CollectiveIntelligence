@@ -38,7 +38,7 @@ Most importantly for social coordination is the identification of beings and thi
 
 Let us first differentiate economic participants from everything else. An economic participant is everything and everybody that influences voluntary participants to a degree that the influenced participant accounts for. Essentially it's the set of everything that is directly or indirectly important to at least one voluntary participant, with voluntary participant referring to a being that uses Ask Network to coordinate.
 
-Let us further differentiate between passive and active  participants:
+Let us further differentiate between passive and active participants:
 
 Passive participants are things with no behavior of their own other than the natural laws that govern their physical body. Desired things are economic goods (for example, a glass of wine) whereas undesired things are economic costs (like waste).
 
@@ -50,23 +50,15 @@ We identify a human as every communicating participant which is not labeled as a
 
 Humans can authenticate themselves by claiming spots on the economic social graph. Smart things can authenticate themselves with an onboard private key.
 
-## Economics
-
-This section analyzes the dynamics of active participants interacting with each other. First we'll analyze interaction in the actual, and then show how communication in the virtual gives rise to coordinating such interactions so that everyone is better off.
-
-From here onwards, we call an active economic participant an _agent_. Further, let's call all agents that are beings _subjects_, and all agents that are things _objects_.
-
-Furthermore we assume all agents aim to optimize desires and aversions of their own. We refer to such an aim as the subjects or objects _wants_.
-
-Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_. What the agent ended up doing is called his _acts_.
-
-Each agent is assumed to do whatever it wants at any given moment as the default strategy. But beings and things may influence each other with their acts, positively or negatively. This soon will give rise to coordination between subjects.
-
-For that, subjects communicate a shared world view via digital communication networks, and negotiate social coordination directly. A general scheme for such a conversation is layed out in the next section.
-
 ## Coordination
 
-This section defines an abstract conversation to semi-automatically negotiate social coordination directly in terms of conditional actions (_"I do this if I observe that"_), from which then commitment schemes are constructed (_"I do this if you do that"_).
+From here onwards, we call an active economic participant, those beings or things operating a sensory-motor cycle, an _agent_. Further, let's call all agents that are beings _subjects_, and all agents that are things _objects_.
+
+We assume all agents aim to optimize their behavior to best respect the desires and aversions of their own. We refer to such an aim as the agents _wants_. While each agent certaily incorporates wants in their decision process as there always is a trade off between picking one action over another, the agent may not be explicitly aware of the wants that drive his decision.
+
+All agents are assumed to do whatever they wants at any given moment by default. But beings and things may influence each other with their acts, positively or negatively. This soon will give rise to coordination between agents. For that, agents communicate an unambiguous shared world view, and negotiate who does what directly.
+
+This section defines a general scheme for such a  conversation to semi-automatically negotiate social coordination directly in terms of conditional actions (_"I do this if I observe that"_), from which then commitment schemes are constructed (_"I do this if you do that"_).
 
 The goals for this conversaition is:
 
@@ -107,6 +99,12 @@ After desired action paths have been identified, users commit to them by signing
 Then the subjects go ahead and actually do it accordingly, or they won't, depending in their final decision in the moment of the act. Subjects may purposefuly record evidence to later prove they caused certain economic activity.
 
 Wants are evaluated continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value, possibly from successful coordination. Unfulfilled critical wants are indicators of unsuccessful coordination taking place.
+
+## Economics
+
+This section analyzes the dynamics of active participants interacting with each other. First we'll analyze interaction in the actual, and then show how communication in the virtual gives rise to coordinating such interactions so that everyone is better off.
+
+Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_. What the agent ended up doing is called his _acts_.
 
 ## Coordination Markets
 
