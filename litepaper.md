@@ -10,9 +10,9 @@ Next, we create a strongly-typed conversation about (1) what we could do (propos
 
 ## Observations
 
-Data is our window into reality. All data in Ask Network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
+Data is our window into reality. All data in the network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
 
-Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data, hardware sensors must be utilized. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
+Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data, hardware sensors must be utilized. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, every node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
 ## Domains
 
@@ -105,6 +105,28 @@ Wants are evaluated continuously on all observations as a measure for economic h
 This section analyzes the dynamics of active participants interacting with each other. First we'll analyze interaction in the actual, and then show how communication in the virtual gives rise to coordinating such interactions so that everyone is better off.
 
 Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_. What the agent ended up doing is called his _acts_.
+
+Action spaces of agents.
+
+Action spaces of agents can be increased by objects used as instrument.
+
+Acions yield effects. Effects are changes in probabilties of happenings in the outer world compared to the inaction scenario, which further changes the expectation in future observations with which we can reason about what ended up happen. We quantify the effect of an action by comparing its causal expectations to those of inaction. All probabilities of effects that are different is the effect of the probed action, under the same assumptions of the domain models used for reasoning.
+
+Actions can be chained together into action paths, with previous actions changing reality so to make the next action possible. Individual actions in action paths may not be directly desirable, but the effect of a depending action could be desirale enough to make it worthwhile to pursue still.
+
+Wants of subjects imply an order of possible contexts. Since the choice of acts influences the future context, and a context could be more, less, or equally desired according to that order, wants also give an order to possible actions and action paths.
+
+Since wants are referring to actuality, and acts change actuality, act may influence the success rate of other possible actions.
+
+Some wants are compatible, meaning that the pursuaince of one want through acts in actuality does not decrease the probability of another want being fulfilled, wheras other wants could be in conflict, with the pursiance of one want decreasing the probability of another want being fulfilled.
+
+With multiple agents having different wants, there could be a conflict when agents pursure conflicting wants.
+
+If other agents possible actions are not considered when decinding on an act, conflicts are played out in actuality. Conflicts are resolved after the fact, with any solution usually having a cleanup cost associated. This methodology is energy intensive for all participants and may never yield any desirable results.
+
+If agents do consider other agents possible actions, a defensive dynamic emerges: Possible undesirable actions of other agents are considered and planned for, and undesirable acts of other agents are actively counter-acted to accordingly.
+
+If communication between agents is possible and the willingness to coordinate is there, conflects can be resolved ex-ante. Agents can publish commitments and conditional commitments, where each commitment is a conditional action. After some rounds of updating commitments we should gradually inprove the projected rate of filled wants as agents would tend to use opportunities of positive-sum cooperation. This addresses productive economic activity (which is value creation through cooperation, essentially finding the win-wins). Now we must refocus on governance (which is conflict prevention (ex-ante) and conflict correction (ex-post)), which addresses the issue of value destruction caused by agents decisions. A list of what should and should not be done in scociety, together with why, can be deerived from valuing other peoples wants through their own wants. This creates a list of morals, shared or not, and constraints the commitment-space that can be declared on the network in order to resolve a conflict.
 
 ## Coordination Markets
 
@@ -300,23 +322,22 @@ Feel free to ask, look out for a response, but don't expect a change in behavior
 
 ## Theoretical Foundations
 
+- Lattice-based evaluation of state merges like in CUE, with newer values being accepted over older values if in conflict.
+- Order theory to construct a state type as a CRDT (conflict free replicated data type), allowing it to be merged in any order while converging on the global state.
+- Semantically linked metadata with IEML (the Information Economy MetaLanguage), as labels for data nodes in the storage cell. IEMLs algebra is based on Alain Connes non-commutative geometry.
 - Counterfactual reasoning with structural causal models (Judea Pearl).
 - Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data)
 - Consistent data migration between domains with Ologs
 - Information querying on the ologs with CQL (the Categorical Query Language)
-- Interoperable semantic annotations of olog objects with IEML (the Information Economy MetaLanguage)
 - Interoperability with virtual and actual reality (external blockchain networks and physical reality) with the HGTP data standard (Hypergraph Transfer Protocol)
 - Implementation of tokenomics on Constellation Network
 
 ## Next steps
 
-We are implementing the first version of this: First we implement a generalized +EV-Crawler with applications in algorithmic trading of electricity and crypto assets. Then we go on an implement the Ask Economy as a public network.
+Implementations of the observation pool and local semantic-causal reasoning are in the works. First it is used for algorithmic trading. Once that software is stable, the public network is implemented which makes trading bots across organizational boundaries coordinate with each other, creating a global market making botnet and possibly a p2p crypto exchange. Further, domains that model physical reality are authored to gradually enable negotiation of social coordination in reality directly without the need for traditional financial products.
 
-In case you want to contribute, you can do so by:
+There are two ways you can contribute:
 
-- (i) help implementing this using your technical expertise and dedication in exchange for a minimum viable life (MVL), or
-- (ii) donating crypto assets to pay for the MVLs of our contributors and get a spot on the networks seed list.
+You can **help implementing this** using your technical expertise and dedication in exchange for a minimum viable life (MVL). [Text me](https://t.me/extremecookie) if you are interested.
 
-If (i) applies to you, look for further instructions in the _#builders_-channel on our Discord.
-
-If (ii) applies to you, send crypto assets into our SAFE on either Ethereum, Arbitrum, or Polygon. The address is the same for all networks: `0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e`.
+Alternatively, you can **donate crypto assets** to pay for the MVLs of our contributors and to get a spot on the networks seed list.. Please send crypto assets to our SAFE on Ethereum: [`0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e`](https://app.safe.global/balances?safe=eth:0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e). If you want access to the multisig, just ask.
