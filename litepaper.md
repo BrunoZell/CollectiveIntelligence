@@ -102,31 +102,21 @@ Wants are evaluated continuously on all observations as a measure for economic h
 
 ## Economics
 
-This section analyzes the dynamics of active participants interacting with each other. First we'll analyze interaction in the actual, and then show how communication in the virtual gives rise to coordinating such interactions so that everyone is better off.
+This section analyzes the dynamics of active participants interacting with each. First we'll analyze interactions in the actual, and then show how coordination can leave practically everyone better off.
 
 Each agent can or can't do a given action. The group of all actions available to an agent is called its _action space_. What the agent ended up doing is called his _acts_.
 
-Action spaces of agents.
+Action spaces of agents can be increased by using other economic objects as an _instrument_, such as a car.
 
-Action spaces of agents can be increased by objects used as instrument.
-
-Acions yield effects. Effects are changes in probabilties of happenings in the outer world compared to the inaction scenario, which further changes the expectation in future observations with which we can reason about what ended up happen. We quantify the effect of an action by comparing its causal expectations to those of inaction. All probabilities of effects that are different is the effect of the probed action, under the same assumptions of the domain models used for reasoning.
+Acts yield effects in actuality. We quantify the expected effect of an action by comparing its causal expectations to those of inaction. All differing probabilities in the probed context compared to the inaction context must be caused by the probed action, under the same assumptions of the domain models used for reasoning.
 
 Actions can be chained together into action paths, with previous actions changing reality so to make the next action possible. Individual actions in action paths may not be directly desirable, but the effect of a depending action could be desirale enough to make it worthwhile to pursue still.
 
-Wants of subjects imply an order of possible contexts. Since the choice of acts influences the future context, and a context could be more, less, or equally desired according to that order, wants also give an order to possible actions and action paths.
+We differentiate between two areas of interactions: _governance_ and _production_.
 
-Since wants are referring to actuality, and acts change actuality, act may influence the success rate of other possible actions.
+**Governance** is about what not to do. Or to rephrase, to make value destruction less likely. It is concerned with conflict prevention (ex-ante) and conflict correction (ex-post). It deals with practically mutually exclusive wants across individual agents and is used for final settlement after delivery.
 
-Some wants are compatible, meaning that the pursuaince of one want through acts in actuality does not decrease the probability of another want being fulfilled, wheras other wants could be in conflict, with the pursiance of one want decreasing the probability of another want being fulfilled.
-
-With multiple agents having different wants, there could be a conflict when agents pursure conflicting wants.
-
-If other agents possible actions are not considered when decinding on an act, conflicts are played out in actuality. Conflicts are resolved after the fact, with any solution usually having a cleanup cost associated. This methodology is energy intensive for all participants and may never yield any desirable results.
-
-If agents do consider other agents possible actions, a defensive dynamic emerges: Possible undesirable actions of other agents are considered and planned for, and undesirable acts of other agents are actively counter-acted to accordingly.
-
-If communication between agents is possible and the willingness to coordinate is there, conflects can be resolved ex-ante. Agents can publish commitments and conditional commitments, where each commitment is a conditional action. After some rounds of updating commitments we should gradually inprove the projected rate of filled wants as agents would tend to use opportunities of positive-sum cooperation. This addresses productive economic activity (which is value creation through cooperation, essentially finding the win-wins). Now we must refocus on governance (which is conflict prevention (ex-ante) and conflict correction (ex-post)), which addresses the issue of value destruction caused by agents decisions. A list of what should and should not be done in scociety, together with why, can be deerived from valuing other peoples wants through their own wants. This creates a list of morals, shared or not, and constraints the commitment-space that can be declared on the network in order to resolve a conflict.
+**Production** is about what to do. Or to rephrase, to make value construction more likely. It is concerned with coordination towards mutually beneifitial action plans. After some rounds of agents updating commitments we should gradually improve the projected rate of filled wants as agents tend to go for opportunities of positive-sum cooperation.
 
 ## Coordination Markets
 
