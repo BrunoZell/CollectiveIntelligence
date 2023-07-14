@@ -293,6 +293,50 @@ show how Ask Network is the next evolution in money/banking/finance.
 
 and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
 
+## User Interface
+
+want
+(I want x)
+
+commit
+(if i observe x, i will do y)
+
+proposal
+(I propose a to commit to this, and b to uncommit from this)
+I propose to a: [change of plan], b: [change of plan]
+:actor-map 
+:change of plan = :add | :remove
+:add commitment c
+:remove commitment i of previous $account.commitment-set
+
+ask
+(I accept paying a network fee for this want to get filled)
+
+offer
+I ($serviceProvider) offer $causal-effect and thus you gain $unlockedActions in your action space in $context-match if you fill out this #order-form.
+>with $unlockedActions depending on just $context-match captured variables, its a selection over some domains action space
+>with $causal-effect derived from one or more conditional commitments of the form:
+  if I observe a deal for this offer, I commit to a when I observe o
+  ..for all required actions to facilitate the service
+
+order
+(I submit a binding order to $offer with $orderForm)
+
+deal
+(I ($serviceProvider) bindingly acknowledge and confirm your $order)
+
+production started
+(I ($serviceProvider) bindingly confirm the production of your $order has started)
+
+ready for delivery
+(I ($serviceProvider) bindingly confirm your $order is now ready for delivery)
+
+delivery completed
+(I ($serviceProvider) bindingly confirm your $order is fully delivered. No more acts of us will be done for this.)
+
+settled
+(network declares this deal as settled)
+
 ## Guiding Principles
 
 There are three guiding principles every active participant is asked to follow to get the most value out of the network:
@@ -312,6 +356,7 @@ Feel free to ask, look out for a response, but don't expect a change in behavior
 
 ## Theoretical Foundations
 
+- Lambda calculus is used to evaluate whether a given context matches a condition, and further to map values from the matched context to an output, which could be actions (in the case of commitments) or commitments (in the case of conditional commitments).
 - Lattice-based evaluation of state merges like in CUE, with newer values being accepted over older values if in conflict.
 - Order theory to construct a state type as a CRDT (conflict free replicated data type), allowing it to be merged in any order while converging on the global state.
 - Semantically linked metadata with IEML (the Information Economy MetaLanguage), as labels for data nodes in the storage cell. IEMLs algebra is based on Alain Connes non-commutative geometry.
@@ -321,6 +366,32 @@ Feel free to ask, look out for a response, but don't expect a change in behavior
 - Information querying on the ologs with CQL (the Categorical Query Language)
 - Interoperability with virtual and actual reality (external blockchain networks and physical reality) with the HGTP data standard (Hypergraph Transfer Protocol)
 - Implementation of tokenomics on Constellation Network
+
+
+## Theoretical Foundations
+
+This section lists the mathematical models used in the design of this system.
+
+Each mathematical object is explained what algorithms it unlocks, and a brief positioning in the matematical universe (calculus? algebra? lambda-calc? order theory? category theory? geometry?)
+
+Timestamping via a merkle clock
+
+Lazy convergent sequencing via a CRDT on the merkle timestamp. It allows for data to be merged asynchronously in the network since a CRDT has a associative, commutative, and idempotent join procedure. It's based on order theory.
+
+Messages:
+
+
+The fix specified abstract phrases in the user messages  are expressed in IEML relating to the perceptionistic object persistent or stateful view on things. Each message talked about what happend, including subjects, objects, vebs, referrents ect.
+
+Semantically linked metadata with IEML (the Information Economy MetaLanguage), as Labels for data nodes in a neurons storage cell are described as IEML phrases, mapping referrents to IPLD scalar nodes or recursive IEML phrases. Formulating variable names in IEML results in all variable names to define themself by being in a relation to all other variables. IEMLs algebra is based on Alain Connes non-commutative geometry.
+
+Counterfactual reasoning with structural causal models and the do-calculus.
+
+Interoperability with virtual and actual reality with the HGTP data standard (Hypergraph Transfer Protocol). This makes it compatible with external blockchain networks and physical reality.
+
+Information querying on matched contexts with CQL (the Categorical Query Language) which allows us to map data from one scheme (a context filled with observations; or an [abstract] network protocol session)
+
+Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data).
 
 ## Next steps
 
