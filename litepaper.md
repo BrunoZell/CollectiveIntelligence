@@ -243,56 +243,6 @@ e) Finally, let’s decentralize the governance of online interactions by promot
 essentially it comes down to small, immediate gates (locking the door of your apartment, watching your bags, locking your car, having a 1m people-free sphere around you).
 What the network gets rid of are large scale gates, because coordination liquidity is globally liquid and everyone thus has paid "taxes" in every place that.
 
-## Example: Peer to Peer Ride Sharing
-
-show domain models used: cars, drivers, pickup, street navigation, pickup, dropoff, working schedule, smartphone usage
-
-taxi ride voucher:
-service: get from geospacial point $pickup to geospacial point $dropoff // ask template to be used as filter for ask flow
-order form: { pickup: Herrfurthstr; dropoff: Hermannstr; } // data for order as extracted from an ask that matches the service template
-offer: {
-    actions: [
-        #driver will drive #car to #dropoff
-        #driver will wait at #dropoff for #you to enter the #car
-        #
-    ]
-    estimations: [
-        #car at #pickup: in 1-3 minutes;
-        #car at #dropoff carrying #you (asker): in 25-29 minutes;
-    ]
-    // costs are estimated before delivery, fixed after delivery
-    cost: {
-        driver-time: 50minutes;
-        fuel-consumption: 3l;
-        car-usage: 50 car usage minutes;
-        road-usage: 5km specific road usage
-    }
-    subjects: [ #driver ]
-}
-
-match with committed drivers:market maker propose order form of a service that exactly fulfills the users ask. The MM may have to invent that service on his own but then purely virtually orchestrate different service offerings, some of them actual services. Risk is on him to successfully deliver the orchestration, with risk of downstream suplliers failing possibly hedged in prediction markets. Are there any leftover, unclaimed values the MM can collect in that match?
-
-## Positioning Ask Network
-
-briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
-
-- Debt and dependence on trust
-- Bartering and double concidents of wants
-- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
-- First bank notes
-- Central banks
-- first ERMA computer
-- clearinghouse systems (automatic payments and ATM transactions)
-- SWIFT
-
-Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
-
-show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
-
-show how Ask Network is the next evolution in money/banking/finance.
-
-and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
-
 ## User Interface
 
 want
@@ -336,6 +286,35 @@ delivery completed
 
 settled
 (network declares this deal as settled)
+
+## Example: Peer to Peer Ride Sharing
+
+show domain models used: cars, drivers, pickup, street navigation, pickup, dropoff, working schedule, smartphone usage
+
+taxi ride voucher:
+service: get from geospacial point $pickup to geospacial point $dropoff // ask template to be used as filter for ask flow
+order form: { pickup: Herrfurthstr; dropoff: Hermannstr; } // data for order as extracted from an ask that matches the service template
+offer: {
+    actions: [
+        #driver will drive #car to #dropoff
+        #driver will wait at #dropoff for #you to enter the #car
+        #
+    ]
+    estimations: [
+        #car at #pickup: in 1-3 minutes;
+        #car at #dropoff carrying #you (asker): in 25-29 minutes;
+    ]
+    // costs are estimated before delivery, fixed after delivery
+    cost: {
+        driver-time: 50minutes;
+        fuel-consumption: 3l;
+        car-usage: 50 car usage minutes;
+        road-usage: 5km specific road usage
+    }
+    subjects: [ #driver ]
+}
+
+match with committed drivers:market maker propose order form of a service that exactly fulfills the users ask. The MM may have to invent that service on his own but then purely virtually orchestrate different service offerings, some of them actual services. Risk is on him to successfully deliver the orchestration, with risk of downstream suplliers failing possibly hedged in prediction markets. Are there any leftover, unclaimed values the MM can collect in that match?
 
 ## Guiding Principles
 
@@ -392,6 +371,27 @@ Interoperability with virtual and actual reality with the HGTP data standard (Hy
 Information querying on matched contexts with CQL (the Categorical Query Language) which allows us to map data from one scheme (a context filled with observations; or an [abstract] network protocol session)
 
 Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data).
+
+## Positioning Ask Network
+
+briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
+
+- Debt and dependence on trust
+- Bartering and double concidents of wants
+- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
+- First bank notes
+- Central banks
+- first ERMA computer
+- clearinghouse systems (automatic payments and ATM transactions)
+- SWIFT
+
+Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
+
+show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
+
+show how Ask Network is the next evolution in money/banking/finance.
+
+and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
 
 ## Next steps
 
