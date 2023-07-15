@@ -1,16 +1,18 @@
-# Ask Network
+# Ask Network Lightpaper Draft
 
-The network architecture seperates three areas of concern.
+## Abstract
 
-First, we'll define a database to house observations of reality. It is the cannonical representation of the world external to the network. Those measurements are used to reason about possible actions and an indicator of how realized economic value.
+This document poses a conversational structure as an alternative solution to social coordination. We expect this to be more efficient, effective, and humane than money or every other political system humanity tried out yet.
 
-Next, we create a central collection point of peoples wants. That is, satisfiable statements of what people want. Those wants can be compared with observations to determine wether the wants are indeed satisfied or not. The networks goal is to satisfy those declared wants as adequate as possible.
+The network helps to coordinate who does what so that people get what they want at a lower cost, or at a better quality.
 
-Next, we create a strongly-typed conversation about (1) what we could do (proposals) and (2) what we declare to do (commitments).
+Coordination markets achieve a high quality of service by standardizing the expression of wants and aversions, essentially outsourcing market analysis and offer selection to professional market makers with just the final purchasing decision being signed by the user.
+
+The rest of this document walks through the design of the network with the most fundamental part first, toward more complex structures.
 
 ## Observations
 
-Data is our window into reality. All data in the network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
+Data is our window into reality. All data in the network is modelled as _messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
 
 Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data, hardware sensors must be utilized. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, every node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
@@ -52,17 +54,17 @@ Humans can authenticate themselves by claiming spots on the economic social grap
 
 ## Coordination
 
-From here onwards, we call an active economic participant, those beings or things operating a sensory-motor cycle, an _agent_. Further, let's call all agents that are beings _subjects_, and all agents that are things _objects_.
+From here onwards, we call an active economic participant an _agent_, those beings or things operating a sensory-motor cycle.
 
 We assume all agents aim to optimize their behavior to best respect the desires and aversions of their own. We refer to such an aim as the agents _wants_. While each agent certaily incorporates wants in their decision process as there always is a trade off between picking one action over another, the agent may not be explicitly aware of the wants that drive his decision.
 
-All agents are assumed to do whatever they wants at any given moment by default. But beings and things may influence each other with their acts, positively or negatively. This soon will give rise to coordination between agents. For that, agents communicate an unambiguous shared world view, and negotiate who does what directly.
+All agents are assumed to do whatever they want at any given moment by default. But agents may influence each other with their acts, positively or negatively. This soon will give rise to voluntary coordination between agents. For that, agents communicate an unambiguous shared world view, and negotiate who does what directly.
 
-This section defines a general scheme for such a  conversation to semi-automatically negotiate social coordination directly in terms of conditional actions (_"I do this if I observe that"_), from which then commitment schemes are constructed (_"I do this if you do that"_).
+This section defines a general scheme for such a conversation to semi-automatically negotiate social coordination directly in terms of conditional actions (_"I do this if I observe that"_), from which then commitment schemes are constructed (_"I do this if you do that"_).
 
 The goals for this conversaition is:
 
-- (i) We recognize that agents carry their own individual wants and each subject should be heard
+- (i) We recognize that agents carry their own individual wants and each agent should have a voice
 - (ii) We also would welcome an open and unambiguous conversation about what we can do, esentially searching through our possible action plans.
 - (iii) Further, an unambiguous social contract with automatic accounting and trustless settlement could help to coordinate on what we do.
 
@@ -92,11 +94,11 @@ Those queries can be combined into a formalization of the foundational question 
 
 **what could we do | so we like it | in the future?**
 
-Which translates into scanning the corpus of _proposals_ for action paths that increase the probability of _wants_ being satisfied according to future observations.
+Which translates into scanning the corpus of _proposals_ for those that increase the probability of _wants_ being satisfied by future observations according to selected domain models.
 
-After desired action paths have been identified, users commit to them by signing its actions and publishing it as _commitments_. A commitment is an official statement of executing a specified act when the attached condition was satisfied by the latest observations.
+After desired actions have been identified, users commit to them by signing and publishing according _commitments_. A commitment is an official statement of executing a specified act when the attached condition was satisfied by the latest observations.
 
-Then the subjects go ahead and actually do it accordingly, or they won't, depending in their final decision in the moment of the act. Subjects may purposefuly record evidence to later prove they caused certain economic activity.
+Then the agents go ahead and actually do it accordingly, or they won't, depending in their final decision in the moment of the act. Agents may purposefuly record evidence to later prove they caused or haven't caused certain economic activity.
 
 Wants are evaluated continuously on all observations as a measure for economic health. Fulfilled wants are indicators of realized value, possibly from successful coordination. Unfulfilled critical wants are indicators of unsuccessful coordination taking place.
 
@@ -110,138 +112,45 @@ Action spaces of agents can be increased by using other economic objects as an _
 
 Acts yield effects in actuality. We quantify the expected effect of an action by comparing its causal expectations to those of inaction. All differing probabilities in the probed context compared to the inaction context must be caused by the probed action, under the same assumptions of the domain models used for reasoning.
 
-Actions can be chained together into action paths, with previous actions changing reality so to make the next action possible. Individual actions in action paths may not be directly desirable, but the effect of a depending action could be desirale enough to make it worthwhile to pursue still.
+Actions can be chained together into action plans, with previous actions changing reality so to make the next action possible. Individual actions in action plans may not be directly desirable, but the effect of a depending action could be desirale enough to make it worthwhile to pursue still.
 
 We differentiate between two areas of interactions: _governance_ and _production_.
 
-**Governance** is about what not to do. Or to rephrase, to make value destruction less likely. It is concerned with conflict prevention (ex-ante) and conflict correction (ex-post). It deals with practically mutually exclusive wants across individual agents and is used for final settlement after delivery.
+**Governance** is about what not to do. Or to rephrase, to make value destruction less likely. It is concerned with conflict prevention ex-ante by negotiating compromises and conflict correction ex-post use of counter-acts. It deals with practically mutually exclusive wants across individual agents and is used for final settlement after delivery.
 
-**Production** is about what to do. Or to rephrase, to make value construction more likely. It is concerned with coordination towards mutually beneifitial action plans. After some rounds of agents updating commitments we should gradually improve the projected rate of filled wants as agents tend to go for opportunities of positive-sum cooperation.
+**Production** is about what to do. Or to rephrase, to make value construction more likely. It is concerned with coordination towards mutually beneifitial action plans. After some rounds of agents updating their commitments, the collective action plan should gradually improve the projected rate of filled wants as agents tend to go for opportunities of positive-sum cooperation.
 
 ## Coordination Markets
 
-Coordination schemes combine commitments (I [commit to] do this if I observe that) into commitments that are conditioned on (a) other commitments (I [commit to] do this if [I observe] you commit to that). Assuming commitments to be followed, it translates into "I do this if you do that", subject to the actual decisions (derived from their actual wants, possibly different than their declared wants) each agent acts on.
+Let's generalize the order book: Define _asks_, _offers_, and _matches_.
 
-Further we define an _offer_ as a parameterizable commitment scheme that essentially represents a futures product with physical delivery taken care of by a _service provider_. An offer standardizes ordering of the offered productive output and guides the process of production, delivery, and settlement.
+**Asks** represent the demand side of productive output and are published by consumers. They specify what services they currently look out for, formulated in the consumers perspective abstracting out all to him irrelevant details of production and delivery.
 
-An offer is specified by a coordination scheme a service provider commits to, which defines what commitments are entered when a deal is closed to then orchestrate production and delivery. A coordination scheme is defined as conditional commitments, in the form of "I commit to this if I observe that", where the observations are incoming orders (from consumers) and acknowledged deals (from the referenced service provider).
+**Offers** represent the supply side of productive output and are published by service providers according to their organizations production capacity.
 
-Conditional commitments (different from the condition on the action in the commitment itself) can be either conditioned on (a) the conditional action of other commitments, (b) the expected abstract effect of the other commitments conditional actions, or (c) declared wants of others resulting in automatic services useful for subscription services, or (d) on proposals that yield a certain (typically desired) effec
+Proposed **Matches** claim one or more ask would get filled if a specified list of offers would get ordered.
 
-Further, coordination schemes can conditon commitments on published action traces, which describe what act actually happened. The condition of the commitment may not be able to measure directly or is not available to whoever is interested in it, but the form of an acts evidence (action trace) can be aligned on upfront, with the actor commiting to publishing the according action trace, otherwise counter-actions may be triggered by whoever desires the action to have happened.
+Asks and offers are authored in different perspectives, that of the consumer or service provider, respectively. The market makers task is to translate between those perspectives, finding out when to order what service offering to expectedly fulfill asks of one or more users.
 
-Action traces are published either by the account owner to provide evidence of an act. Coordination schemes may require to post action traces to be fulfilled. Also accounts can submit action traces of other economic participants. That can be non-communicating participants or passive participants who don't have the ability to post an action trace of their own, or the action trace is evidence for value destruction which could trigger commitments of still other active participants which aim to counter-act that value destruction (examples are settlement procedures for failed deliveries or a police force protecting the wants of agents.
+Now let's generalize a futures product with physical delivery. For any offer to be listed in the networks offer book, it must implement an abstract coordination interface: offer -> order -> deal -> production -> delivery -> settlement -> settled.
 
-Also, commitments that depend on other commitments can be automatically committed once all upstream dependencies are committed. This mechanic of "committing to something if you commit to something" is understood by the network and opens up the space of commitment negotiations. Since commitments are virtually binding, a recursive commitment is a form of binding intent, with all virtual stake attached to the commitment possibly being a bounty on matching complementary commitments, with complementary commitments referring to those commitments who, when committed, would lead to the dependant being committed immediately too.
+Each offer defines an order formular. When a user likes to order a service, he will fill out the offers order formular, sign it and send it to the service provider. The service provider analyzes the order and if we likes to provide that service, he signs a deal acknowledging and accepting that order. A newly signed deal initially is in an active state and comparable to open interest in a traditional futures contract.
 
-The uniform nature of service offerings allow for an efficient generalized matchmaking algorithm that crawls orders made possible by active service offerings that would fulfill active wants in case of a successful delivery.
+An offers underlying commitment scheme consists of commitments conditioned on signed deals of that very offer. Therefore, once the deal is signed and published, worker agents orchestrated by the service provider automatically commit to actions that make up the service.
 
-Operations refers to instatiations of commitment schemes, which are actual people and things commiting to offering a service.
+First, there is a production phase in which worker agents prepare everything for a successful delivery. When production is done, the benefitiary will be notified that the product is ready for delivery. The condition for this notification is defined in the original offer and can only be changed if the active deal is renegotiated.
+
+Next, the delivery phase is interactive involving both workers and benefitiaries. Each offer outlines usage instructions to benefitiaries describing what to do when in order to have an easy experience and a successful delivery.
+
+When delivery is done, as defined in the terms of the deal, the settlement phase begins. This is where payments are released or disputes are raised, all in line with the terms defined in the active deal.
+
+After a delay proportional to the economic size of the deal relative to other deals in the network, the deal is moved into its final state of being closed.
 
 ## Tokenomics
 
-Goals:
+_Work in progress. Feel free to ask for more information._
 
-- Generate proposals that increases the probability of wants being fulfilled if the proposed commitments are actually committed to.
-
-Tokenomics are defined in terms of service offerings as defined in the previous section. So:
-
-- Have service providers committing to causing successful deliveries of products that are wanted
-- Have operating solvers who actively find and propose proposals.
-
-Observations: pay per entropy
-Domains: pay per reduction in surprise x useful economic activity caused (=used in completed deals):
-
-- historically: immediately, relative to theories that have been improved upon
-- future: pay/deal, gradually decreased based on how quickly it is replaced by newer theories
-proposals + deals: payment through commitment negotiations, whatever you can get from others.
-
-At some point, some participants may feel happy with a proposed alternative action path.
-[this is where ask Network comes in to play the role of a mediator, especially across time (pay salary now from treasury, sell product later on, leaving to time-sensitive risk other than that of the economy to the worker. Those risks would carry entrapreneurs nowadays, but must not be carried at all by an Ask Network contributor. Essentially everybody is now selft employed and enjoys those benefits, but without additional accounting (data exports into various jurisdictions can be automated) and no risk of bankruptcy (risk is taken by the networks onchain +EV-selectoror, compensate by the economic value of the produce that the network auctions off to other active economic participants (agents)), and capital (you can use the networks treasury to bridge the production<>consumption capital requirements and fees like €25k for a GmbH is lender to you by the network, and further monitored by standard online banking HTTPS session captures to monitor the usage of the network funds.
-
-MVLs are freely sellable. The network auctions them off (with price control to raise money for development) to acquire a treasury, and pay contributors at the point of the gift act, with the network "speculating" on that acts economic productivity which the network is free to sell at a later point in time to somebody else. This treasury basically bridges the gap of production<>consumption, with costs accuring during production (by possibly many actors or organizations along the value chain).
-
-subsidized tipping: every MVL that is actually consumed has a certain amount of subsidized tips available to him. During production, delivery, and after delivery you can rate the service and optionally annotate with what you liked about it. Negative ratings pay nothing to nobody. Positive ratings pay a tip to the immediate service provider and to workers down the value chain. The distribution is equal with most weight to the servant, then downwards the chain decreasing, but can be customized by an annotation about what you liked and disliked, which then is attributed to the teams of the individual deals that made the service possible.
-
-Vertical integration is more cost effective: you share the cash buffer, risk of final valuation of produce, and all coordinate to achieve a shared goal (otherwise there wouldn't be a sustainable organization running full vertical production for a given product)
-
-Each voluntary participant of coordination markets creates a permissionless account. Each account automatically keeps track of: wants, commitments, action traces, balances, resource consumption.
-
-Wants and commitments are explicitly updated by the account owner, with each account having a set of active wants and another set of active commitments.
-
-The context to evaluate wants on can either be sourced from historic observations, providing a measurement of realized value. Or it is sourced from hypothetical observations, typically derived from reasoning about the causal impact of actions, providing a measure of potential value realization (proposals) and expected value (commitments).
-
-Show how an actual service offering (with commited subjects) influences how the economies yield v/s is .
-
-The initial account balance is always at 1MVL/s. Rewards
-
-Derive optimal collective strategy from all peoples wants, and wants of wants (=morals, and further sanctions), commitments, dependency, power.
-
-Economists teach that money has three functions:
-
-- It is a means of exchange: it lets you confer power to others.
-- It is a store of value: it lets you delay the exercise of power in time.
-- It is a unit of account: it lets you measure many things by a common yardstick.
-
-The economy proposed here seperates these functions by solving them explicitly.
-
-Most economic theories are answereng those questions:
-
-- What is produced?
-- How is it produced?
-- How much is produced
-- For whom is it produced
-
-Further, each subject is related to one physical embodiment in the actual. By default, every subject with an active account is considered human and given the _Native Human Action Space_, assuming that no other life on earth is capable of using modern computer user interfaces.
-
-- Quantify causal influence on somebody or something on somebody or something
-- Good: Attribution of economic productivity (compared to inaction)
-- Informative: Quantifying power balances between people = as lever over people by actions in action space that positively or negatively influce other subjects.
-
-With all beings and things embedded in the geospatial process, it indexes humans, animals, physical items, and natural resources.
-
-Evaluating conditional actions from proposals and commitments yields an estimation of how reality expectedly is affected by it when compared to the inaction scenario.
-
-While the constraints embedded in the condition guarantee certain abstract truths in any matching context, an actual matching context usually carries additional information that may lead to more detailed or correct estimates about what might happen.
-
-Conditional actions in commitments thus tend to include multiple conditions that represent different possible cases that are planned for ex-ante.
-
-Such conditions may depend on previous actions which allows for the creation of multi-step action paths. Such action paths can be declared and executed across multiple subjects given there is a communication channel between them to share progress.
-
-Multi-subject action paths can be gradually negotiated and built up by commitments that depend on: (1) other peoples commitments or (2) other peoples action traces.
-
-(1) The former is akin to cooperation. I do this and you do that and if we both do it well we end up in a more desirable situation than otherwise. Most straight forward is a win-win situation where all of the participants have a desire for the expecte doutcome. Although even in win-win situations (shared goal) there might be a misalignment about who does what and how exactly actions should be done. For that, mutually dependent commitments can be used to negotiate the planned action path ex-ante, where the commit of one subject is conditioned on another subject having committed to the complementary action with the desired attriutes.
-
-(2) The latter is akin to dispute resolution. I observed you doing something that you may like, but I didn't. In a purely anarchistic setting this would be the end of the story. But any advanced economy has established a legal system that regulate who has the right to do what, declares what others might do to you if you don't respect other subjects rights, and operate a dispute process where disagreements are evaluated and, possibly forcibly, a corrective action is decided on. Further there is an executive who enforce the official corrective action, and a legislative process that fine tune and adjust the rules to changing circumstances.
-
-Coordination is concerned with proactively planning actions. A given action ex-ante implies a difference in expected future observations compared to inaction, which when evaluated against wants may or mat not be desireable for some subjects. It answers the question: **How do we make it, so we like it better?**
-
-Ruling is concerned with reactive counter-actions. It is coordinated by the subjects whichs value got destructed, and is aimed at recreating a desirable situation that was inadequately taken from them by another subject. A given action ex-post implies the actor to have caused related observations as they would be different if the action did not take place.
-It  **What should I not do so others don't have it worse?**
-
-Neither coordination nor rulings are defined explicitly in the base layer of coordination. Such constructs are higher level abstractions that can be compiled down into wants, proposals, and commitments. Such higher level abstractions are defined by commitment schemes as defined later. They are a collection of abstract (parameterized) and mutually dependent commitment templates which can be used to find proposals that point to action plans with expectedly desirable outcomes.
-
-All wants of a single subject imply a priorization of all possible contexts, where all possible contexts are defined by the domain models referenced by the expression want.
-
-The wants of all subjects in the network, together with ex-ante conflict prevention, fairness selector, and legal rights, imply a priorization of the consensus context.
-
-Wants are transparent about how their fulfillment depends on observations, thus contributors can reason about what needs to get done in order to fulfill a want.
-
-Define work as undesirable time spent. Declared vs real values.
-
-Show matrix of human work. The show how coordination can decrease total work, shift work from one person to another (like building a washing machine).
-
-Derive case-tree from all commitments: If people do it don't follow commits, usual inaccuracies or derivations in action execution: show what might happen. Especially evaluate how other people will react to you doing or not doing certain things. Essentially showing you the practical ramifications of your decisions which takes the burden off from you to understand the social contract and just shows you how your values are effected by the actions of all affecting agents.
-
-(Political) governance biases induced by the technical architecture of Ask Network:
-a) In support of this goal, transparency of online processes seems a sine qua non. In particular, but not only, I am aiming at a clear, brief and natural language description of AI training algorithms and data. (optimization goals (wants), and the +EV-optimizatiion process is explicitly reasoned about and can be automatically described in natural languages, like the why of a decision)
-b) Following the example of Wikimedia, let us strive to maximize the knowledge commons. (maximizing entropy on the knowledge base)
-c) Let’s open up the data sets and algorithms along the lines of the free software movement. (=domain models must be executably open sourced to be used, like smart contracts)
-d) Let’s ensure the practical and legal sovereignty of individuals and groups over the data they produce. (permissionlessness nature, everybody can get a new account no problem, made possible by not requiring more than one MVL to get everything you need (so marginal benefit of a second MVL in your account approaches zero by analyzing the social graph and identify distinct humans), but it still has marginal value to people with less than 1MVL or people who want a new account without economic history (their economic credit and debt they may want to escape from))
-e) Finally, let’s decentralize the governance of online interactions by promoting consensual procedures. The social movement that supports the blockchain indicates a possible path here. (ex-ante conversation about wants, proposals, and commitments; only commit when there is consensus.Along with technical crypto-economic consensus about the underlying raw data base)
-
-essentially it comes down to small, immediate gates (locking the door of your apartment, watching your bags, locking your car, having a 1m people-free sphere around you).
-What the network gets rid of are large scale gates, because coordination liquidity is globally liquid and everyone thus has paid "taxes" in every place that.
+Summary: A voucher economy is constructed which lets the user navigate within a generalization-specialization spectrum of productive services. On the one extreme, there is $ASK which represents a general purpose voucher for everything offerable. Users can specialize their amount of $ASK into more narrow vouchers, constraining the use of the tokens to just the service offerings that match the voucher definition. On the other extreme, we have a fully specialized voucher which is tied to a specific service offering from a specific service provider.
 
 ## User Interface
 
@@ -335,70 +244,27 @@ Feel free to ask, look out for a response, but don't expect a change in behavior
 
 ## Theoretical Foundations
 
-- Lambda calculus is used to evaluate whether a given context matches a condition, and further to map values from the matched context to an output, which could be actions (in the case of commitments) or commitments (in the case of conditional commitments).
-- Lattice-based evaluation of state merges like in CUE, with newer values being accepted over older values if in conflict.
-- Order theory to construct a state type as a CRDT (conflict free replicated data type), allowing it to be merged in any order while converging on the global state.
-- Semantically linked metadata with IEML (the Information Economy MetaLanguage), as labels for data nodes in the storage cell. IEMLs algebra is based on Alain Connes non-commutative geometry.
-- Counterfactual reasoning with structural causal models (Judea Pearl).
-- Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data)
-- Consistent data migration between domains with Ologs
-- Information querying on the ologs with CQL (the Categorical Query Language)
-- Interoperability with virtual and actual reality (external blockchain networks and physical reality) with the HGTP data standard (Hypergraph Transfer Protocol)
-- Implementation of tokenomics on Constellation Network
+To ensure all desired economic activity can be accounted for regardless how everyday life changes over the next centuries, the network is invariant to how users view the world and what wants they pursue in that world. That also makes it interoperable with existing coordination mechanisms like companies, money, laws, political institutions, and text messages.
 
+It utilizes a data representation that can express every possible representation of the world, with the state transition function being reality itself.
 
-## Theoretical Foundations
+- [Structured Causal Models](https://www.google.de/books/edition/Causality/wnGU_TsW3BQC) are used to unambiguously communicate expected effects of actions in reality.
+- [CQL (Categorical Query Language)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0024274) is used to migrate observed sensory information between different perspectives on the same thing, essentially communicating between differing world views.
+- Labelling semantic-causal nodes in [IEML (Information Economy MetaLanguage)](https://intlekt.io/2022/10/02/semantic-computing-with-ieml-3/) makes for interoperable and computable semantics, making much of the matchmaking procedure automatable.
+- Using [HGTP (the Hypergraph Transfer Protocol)](https://docs.constellationnetwork.io/learn) for validation ensures compatibility with existing L1s and physical reality since HGTPs data model is compatible with any data type. Thus it's possible to refer to capital that exists in the outer world and to validate physical delivery.
 
-This section lists the mathematical models used in the design of this system.
-
-Each mathematical object is explained what algorithms it unlocks, and a brief positioning in the matematical universe (calculus? algebra? lambda-calc? order theory? category theory? geometry?)
-
-Timestamping via a merkle clock
-
-Lazy convergent sequencing via a CRDT on the merkle timestamp. It allows for data to be merged asynchronously in the network since a CRDT has a associative, commutative, and idempotent join procedure. It's based on order theory.
-
-Messages:
-
-
-The fix specified abstract phrases in the user messages  are expressed in IEML relating to the perceptionistic object persistent or stateful view on things. Each message talked about what happend, including subjects, objects, vebs, referrents ect.
-
-Semantically linked metadata with IEML (the Information Economy MetaLanguage), as Labels for data nodes in a neurons storage cell are described as IEML phrases, mapping referrents to IPLD scalar nodes or recursive IEML phrases. Formulating variable names in IEML results in all variable names to define themself by being in a relation to all other variables. IEMLs algebra is based on Alain Connes non-commutative geometry.
-
-Counterfactual reasoning with structural causal models and the do-calculus.
-
-Interoperability with virtual and actual reality with the HGTP data standard (Hypergraph Transfer Protocol). This makes it compatible with external blockchain networks and physical reality.
-
-Information querying on matched contexts with CQL (the Categorical Query Language) which allows us to map data from one scheme (a context filled with observations; or an [abstract] network protocol session)
-
-Structured data modelling with the IPLD Data Model (InterPlanetary Linked Data).
+All of these technologies have foundations in abstract mathematics, which makes them inherently compatible and if puzzled together coherently, pose a general solution to the general problem of social coordination, as simple as possible.
 
 ## Positioning Ask Network
 
-briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
-
-- Debt and dependence on trust
-- Bartering and double concidents of wants
-- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
-- First bank notes
-- Central banks
-- first ERMA computer
-- clearinghouse systems (automatic payments and ATM transactions)
-- SWIFT
-
-Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
-
-show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
-
-show how Ask Network is the next evolution in money/banking/finance.
-
-and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
+[Long form here](https://github.com/BrunoZell/ask.network/blob/main/positioning.md)
 
 ## Next steps
 
-Implementations of the observation pool and local semantic-causal reasoning are in the works. First it is used for algorithmic trading. Once that software is stable, the public network is implemented which makes trading bots across organizational boundaries coordinate with each other, creating a global market making botnet and possibly a p2p crypto exchange. Further, domains that model physical reality are authored to gradually enable negotiation of social coordination in reality directly without the need for traditional financial products.
+Implementations of the observation pool and local semantic-causal reasoning are in the works. First it is used for algorithmic trading. Once the software is stable, the public network is implemented which lets trading bots across organizational boundaries coordinate with each other, creating a global market making botnet and possibly a p2p crypto exchange. Further, domain modules that model physical reality are authored to gradually enable negotiation of social coordination in terms of measurable and unmeasurable reality without the need for traditional financial products or accounting procedures.
 
 There are two ways you can contribute:
 
 You can **help implementing this** using your technical expertise and dedication in exchange for a minimum viable life (MVL). [Text me](https://t.me/extremecookie) if you are interested.
 
-Alternatively, you can **donate crypto assets** to pay for the MVLs of our contributors and to get a spot on the networks seed list.. Please send crypto assets to our SAFE on Ethereum: [`0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e`](https://app.safe.global/balances?safe=eth:0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e). If you want access to the multisig, just ask.
+Alternatively, you can **donate crypto assets** to pay for the MVLs of our contributors. Please send crypto assets to our SAFE on Ethereum: [`0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e`](https://app.safe.global/balances?safe=eth:0x5cf266bb7b5EFE578C2C63A14Ea2b644710E153e). If you want access to the multisig, just ask.
