@@ -279,27 +279,6 @@ offer: {
 
 match with committed drivers:market maker propose order form of a service that exactly fulfills the users ask. The MM may have to invent that service on his own but then purely virtually orchestrate different service offerings, some of them actual services. Risk is on him to successfully deliver the orchestration, with risk of downstream suplliers failing possibly hedged in prediction markets. Are there any leftover, unclaimed values the MM can collect in that match?
 
-## Positioning Ask Network
-
-briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
-
-- Debt and dependence on trust
-- Bartering and double concidents of wants
-- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
-- First bank notes
-- Central banks
-- first ERMA computer
-- clearinghouse systems (automatic payments and ATM transactions)
-- SWIFT
-
-Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
-
-show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
-
-show how Ask Network is the next evolution in money/banking/finance.
-
-and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
-
 ## Guiding Principles
 
 There are three guiding principles every active participant is asked to follow to get the most value out of the network:
@@ -316,6 +295,33 @@ Do whatever you want, as long as everybody is cool with it: We need a verificati
 This mechanisms also serves as a identification and verification of successful-delivery% for any action plan. Considering everything we don't know which has assumed causal mechanisms the user subscribes to (=the domain models he's okay with to reason through, usually science and his own political/societal ego.
 
 Feel free to ask, look out for a response, but don't expect a change in behavior: In the sense of actions: You can ask somebody to do something or don't do something, or do something differently. They may answer to your request with counter-asks which would change their minds, although it's up to them to communicate or not. Multiple Ask-rounds essentially are direct negotiations of social coordination.
+
+## Positioning Ask Network
+
+briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
+
+- Debt and dependence on trust
+- Bartering and double concidents of wants
+- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
+- First bank notes
+- Central banks
+- first ERMA computer
+- clearinghouse systems (automatic payments and ATM transactions)
+- SWIFT
+
+## Achieving Collective Intelligence
+
+What is collective intelligence?
+
+## On Inequality
+
+Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
+
+show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
+
+show how Ask Network is the next evolution in money/banking/finance.
+
+and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
 
 ## Theoretical Foundations
 
