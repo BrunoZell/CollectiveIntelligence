@@ -28,6 +28,58 @@ It utilizes a data model that can express every possible representation of the w
 
 The rest of this document walks through the design of the network with the most fundamental parts first, towards more complex structures.
 
+## Collective Intelligence
+
+## What is Collective Intelligence
+
+Purposefully place meaningful signs into the environment,
+
+for others to pick up and add to their imagination,
+
+and possibly change their behavior because of it.
+
+## We already are collectively intelligent
+
+Take a traffic light as an example:🚦
+
+We placed this thing into the environment so human drivers see it, interpret meaning into it, and adapt their behavior accordingly.
+
+If the light is red, stop. If the light is green go.
+
+So this meaningful traffic light practically orchestrated coordination across multiple individuals, while each individual follows their own decision process.
+
+## We can do better
+
+So it seems we already are collectively intelligent. But not in a digital-native manner.
+
+This documents outlines how digital-native collective intelligence could be structured, and attempts to formalize and implement the necessary protocol to live it out.
+
+## Design Considerations
+
+### Goal: Enabling more humane social coordination
+
+What are we even building? A new mental framework to do social coordination in, plus the technical infrastructure that supports its usage.
+
+Using it must coordinate towards a future reality that humans like. While the humans themselves are deciding on what they like and don't like.
+
+### Requirement: Non-discriminatory: allow all values across all perspective
+
+The system shall allow everybody to express their world views and values in a non-discriminatory manner, while having an optimization process that does not inherently prioritize one human over another by default. Prioritization of humans over other humans must be an emerging property from human values and the current state of reality.
+
+The act of valuing other peoples values creates morals. The act of valuing other peoples actions creates
+
+### Realization: Whatever commitment you enter, its ultimately up to you to pull through or not
+
+A key fact to deal with is that whatever social contract humans declare to enter, their decisions are never controlled directly. Social contracts only ever influence the behavior of humans indirectly, usually be modelling sanctions and incentives that are conditioned on whether people follow through with their actions as declared in the contract or not.
+
+### Scoping: Consensus is not the end goal. End goal is to shape reality so we like it more
+
+Furthermore, aligning on a shared virtual state may be part of the solution, but it is not the end goal. Really it is about shaping reality the way we like it, where pretty much all preceived human value is found in reality and not on some shared ledger. The bits in the network are just the means to get to a better reality.
+
+### Note: Adequate coordination mechanisms already exist, but not formalized so they can easily be managed in hypertext
+
+This system is not meant to be a replacement for existing social contracts, but rather a supplement to them. It serves as a common framework to define new and existing coordination mechanisms in, and offers an accounting infrastructure to operate organizations at a global scale.
+
 ## Observations
 
 Data is our window into reality. All data in the network is modelled as _messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
@@ -166,6 +218,20 @@ The uniform nature of service offerings allow for an efficient generalized match
 Operations refers to instatiations of commitment schemes, which are actual people and things commiting to offering a service.
 
 ## Tokenomics
+
+Firstly, the library of domain theories create an ever expanding surface of possible wants. Now every possible subselection of that surface can be put into a value basket. And virtually, there exists an exchange rate between every possible pair of them. Especially interesting are those value baskets that partially overlap. Consider the value basket of everything possible. Every value basket excluding some would be a subset of this. On the other hand, there are those wants for specifically 
+Now the value basket behind $ASK is that of every single active service offering on the offer book, self-categorizing themselve by specifying the actions they would do for you. Every service provider can mint vouchers for their specific service offerings according to their declared production capacity. Vouchers for individual offers are grouped together via shared matching abstraction over them, into _basket vouchers_. A basket voucher is specified by selectiong specific attributes in a service offer (production, delivery, settlement), with all active service offerings that match that selector being able to be ordered by redeeming that voucher.
+ creates this generalization-specialization notion of social credits (i.e. money).
+
+Control ratio between outstanding vouchers and active service offerings. While a secondary market for vouchers can't be prohibited, the network makes sure that the ratio between outstanding vouchers and actually available service offerings are so that production capacity typically won't be hit.
+
+$ASK is primarily backed by it's treasury, secondarily by the potential productivity of current and future service offerings. $ASK may be put up to auction to increase that treasury. That treasury is paid out according to the settlement rules of deals. It may also auction off specific vouchers to buyers that pay with regular crypto currency, which is received by the treasury. Treasury Guardians are worker bots that are paid to send transactions out of or reasury if the network needs to delivery some crypto assets. They are sent into a smart contract which further distributes it.
+
+From a service provider perspective, the treasury can be used to immediately pay bills accumulated bridges the accumulating costs during the production and delivery phase (i.e. the products path up the value chain) with the final payment of the consumer. Previously every company had to have it's own operational cash buffer, but in this scheme Ask Network can cover your upfront costs as long as there are prediction markets indicating you will end up creating valuable economic productivity (which outsources the risk to speculators).
+
+Thirdly, it service as a store of value between economic activity whichs attribution unlocks later economic consumption in the form of redeemable vouchers to a specific subset of service offerings. Each account gets a continuous fair value income stream. Pre-purchased into specialiyed vouchers according to the accounts wants. The rate of income depends on that accounts past economic activity. If it had caused successful deal deliveries it received an increas in income rate with that. There is a consensus income decay set by the economy automatically that defines every accounts decay of income stream over time, incentivizing the account owner to be productive. At each moment, there is a known voucher space thats purchasable by the account depending on its current income rate. This mechanism of income stream to ungate a surface of vouchers bridges attribution of previous production with the possibility of then later use that attribution as the payment for consumption (which is ordering an ask you want). So while the treasury subsidaries form the business perspective, this froms the consumers perspective, or the every day life interface.
+
+Fourth, it makes a distinction between an MVL (minimum viable life) and everything else. There is a network-wide consensus MVL which is a list of services that cover basic living standards every human needs to at least survive. The tokenomics make sure that this will be produced for every MVL NFT out there first prio (subject to deduplication from the social graph), with all remaining economic activity coordinated as secondary condition.
 
 Goals:
 
@@ -328,10 +394,6 @@ briefly illustrate history of banking, listing problems with their causes, and t
 - first ERMA computer
 - clearinghouse systems (automatic payments and ATM transactions)
 - SWIFT
-
-## Achieving Collective Intelligence
-
-What is collective intelligence?
 
 ## On Inequality
 
