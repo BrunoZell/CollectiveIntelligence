@@ -1,18 +1,38 @@
 # Ask Network
 
-The network architecture seperates three areas of concern.
+## Abstract
 
-First, we'll define a database to house observations of reality. It is the cannonical representation of the world external to the network. Those measurements are used to reason about possible actions and an indicator of how realized economic value.
+This document poses a conversational structure as an alternative solution to social coordination. We expect the mechanism proposed here to be more efficient, effective, and humane than money or every other political system humanity tried out yet.
 
-Next, we create a central collection point of peoples wants. That is, satisfiable statements of what people want. Those wants can be compared with observations to determine wether the wants are indeed satisfied or not. The networks goal is to satisfy those declared wants as adequate as possible.
+The network helps to coordinate who does what so that people get what they want at a lower cost, or at a better quality.
 
-Next, we create a strongly-typed conversation about (1) what we could do (proposals) and (2) what we declare to do (commitments).
+Coordination markets achieve a high quality of service by standardizing the expression of wants and aversions, essentially outsourcing market analysis and offer selection to professional market makers with just the final purchasing decision being signed by the user.
+
+## Overview
+
+The conversation is built so that economic participants negotiate social coordination directly, in terms of what you do and don't do. From that, a new paradigm of coordination markets emerges.
+
+Instead of pairwise transactions as found in monetary economies, the network accounts for future economic activity as conditional actions (_"I do this if I observe that"_), and past economic activity is based on observations of the outer world. From that, onchain reasoning quantifies expected (future) and actual (past) changes to reality caused by the accounted economic activity. Further, these changes can be evaluated against users Asks (wants or aversions) to quantify whether the economic activity has helped.
+
+Negotiations in coordination markets are based on the idea of a match, essentially complementary statements of _"I do this if you do that"_ with all participants accepting the plan.
+
+The network provides an auction mechanism to negotiate matches, accounting of open interest from accepted matches, verification of physical delivery, and according settlement in the virtual.
+
+Matchmaking and counterparty-discovery is facilitated by market makers who search for and propose possibly valuable matches, which are then automatically filtered, prioritized, and annotated based on how the users Asks (wants or aversions) are expectedly satisfied by it before affected users make the final call of committing to them or not.
+
+Asks and service offerings are defined in terms of causal-semantic models of reality which enable onchain reasoning about effects of different possible action paths, and whether these effects are desired or not.
+
+To ensure all desired economic activity can be accounted for regardless how everyday life changes over the next centuries, the network is invariant to how users view the world and what values they pursue in that world. That also makes it interoperable with existing coordination mechanisms like companies, money, laws, political institutions, and text messages.
+
+It utilizes a data model that can express every possible representation of the world, with the state transition function being reality itself.
+
+The rest of this document walks through the design of the network with the most fundamental parts first, towards more complex structures.
 
 ## Observations
 
-Data is our window into reality. All data in Ask Network is modelled as _Messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
+Data is our window into reality. All data in the network is modelled as _messages_. Messages can occur in the virtual as network traffic between computers, and in the actual as causal effects between physical systems. As cultural capital, messages are captured and preserved by default.
 
-Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data, hardware sensors must be utilized. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, an Ask Network node records network protocol sessions only, with interpretations of reality being applied after consensus.
+Software can only capture virtual messages as digital data and does not have direct access to causal effects in reality. To capture real world data, hardware sensors must be utilized. We assume that all real world sensors are communicating their measurements as virtual messages via networking protocols. Thus, every node records network protocol sessions only, with interpretations of reality being applied after consensus.
 
 ## Domains
 
