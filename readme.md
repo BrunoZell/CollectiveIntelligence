@@ -467,6 +467,35 @@ Predictions are bets on how reality may unfold, specified by claiming attributes
 
 Actualizations require somebody or something to actually do something in reality. Which is spending some form or energy to change it, typically aiming for a better state of things. Because this usually is an actual (energy-intensive) process, the marginal costs are accordingly high.
 
+## You only get marginal benefit from wealth
+
+Social connection and a life of production and environmental awareness is not included in being wealthy.
+
+## The things you pursue must be outside of yourself
+
+Only then you are actually serving society and are productinve.
+
+## Tax should only be put on natural resources. Never on human labor or sales tax that adds friction to productive businesses.
+
+## Active money management larger than that of a few human beings is a crime
+
+## Economics: To serve yourself, serve others
+
+You should only be able to "make money" IFF you have served somebody other than yourself.
+
+Any other form of income, except from prediction and coordination markets, is inherently invalid. Essentially, this is a market for debt in the money system, as debt is the source of unacked money with an intrinsic value of zero.
+
+The economic social network of the network provides a way to verify first principles value delivery.
+
+## Economics: Unemployment Statistics
+
+Define work as undesirable time.
+
+Now minimizing work is the goal, so much unemployment is actuallt he aim.
+
+What's important to measure is whether people have their minimum viable life together, but it has nothing to do with that individuals employment status.
+
+
 ## Economics: Expectations (Simulations)
 
 Given one or more models of the world and the current situation:
