@@ -7,16 +7,80 @@ This document poses a conversational structure as an alternative solution to soc
 The network helps to coordinate who does what so that people get what they want at a lower cost, or at a better quality.
 
 Coordination markets achieve a high quality of service by standardizing the expression of wants and aversions, essentially outsourcing market analysis and offer selection to professional market makers with just the final purchasing decision being signed by the user.
-
-## Introduction
+## Overview
 
 The conversation is built so that economic participants negotiate social coordination directly, in terms of what you do and don't do. From that, a new paradigm of coordination markets emerges.
 
-It's based on the idea of a match, essentially complementary statements of _"I do this if you do that"_ with all participants accepting the plan.
+Traditional monetary economies base all economic activity on pairwise transactions, where a good or service flows from the seller to the buyer, with a symmetrical amount of money flowing from the buyer to the seller
+
+In contrast, Ask Network accounts for future economic activity as conditional actions (_"I do this if I observe that"_), and past economic activity is based on observations of the outer world. From that, onchain reasoning quantifies expected (future) and actual (past) changes to reality caused by the accounted economic activity. Further, these changes can be evaluated against users' Asks (wants or aversions) to quantify whether the economic activity has helped.
+
+Negotiations in coordination markets are based on the idea of a match, essentially complementary statements of _"I do this if you do that"_ with all participants accepting the plan.
 
 The network provides an auction mechanism to negotiate matches, accounting of open interest from accepted matches, verification of physical delivery, and according settlement in the virtual.
 
+Matchmaking and counterparty-discovery is facilitated by market makers who search for and propose possibly valuable matches, which are then automatically filtered, prioritized, and annotated based on how the users' Asks (wants or aversions) are expectedly satisfied by it before affected users make the final call of committing to them or not.
+
+Asks and service offerings are defined in terms of causal-semantic models of reality which enable onchain reasoning about effects of different possible action paths, and whether these effects are desired or not.
+
+To ensure all desired economic activity can be accounted for regardless how everyday life changes over the next centuries, the network is invariant to how users view the world and what values they pursue in that world. That also makes it interoperable with existing coordination mechanisms like companies, money, laws, political institutions, and text messages.
+
+It utilizes a data model that can express every possible representation of the world, with the state transition function being reality itself.
+
 The rest of this document walks through the design of the network with the most fundamental parts first, towards more complex structures.
+
+## Collective Intelligence
+
+## What is Collective Intelligence
+
+Purposefully place meaningful signs into the environment,
+
+for others to pick up and add to their imagination,
+
+and possibly change their behavior because of it.
+
+## We already are collectively intelligent
+
+Take a traffic light as an example:🚦
+
+We placed this thing into the environment so human drivers see it, interpret meaning into it, and adapt their behavior accordingly.
+
+If the light is red, stop. If the light is green go.
+
+So this meaningful traffic light practically orchestrated coordination across multiple individuals, while each individual follows their own decision process.
+
+## We can do better
+
+So it seems we already are collectively intelligent. But not in a digital-native manner.
+
+This documents outlines how digital-native collective intelligence could be structured, and attempts to formalize and implement the necessary protocol to live it out.
+
+## Design Considerations
+
+### Goal: Enabling more humane social coordination
+
+What are we even building? A new mental framework to do social coordination in, plus the technical infrastructure that supports its usage.
+
+Using it must coordinate towards a future reality that humans like. While the humans themselves are deciding on what they like and don't like.
+
+### Requirement: Non-discriminatory: allow all values across all perspective
+
+The system shall allow everybody to express their world views and values in a non-discriminatory manner, while having an optimization process that does not inherently prioritize one human over another by default. Prioritization of humans over other humans must be an emerging property from human values and the current state of reality.
+
+The act of valuing other peoples values creates morals. The act of valuing other peoples actions creates
+
+### Realization: Whatever commitment you enter, its ultimately up to you to pull through or not
+
+A key fact to deal with is that whatever social contract humans declare to enter, their decisions are never controlled directly. Social contracts only ever influence the behavior of humans indirectly, usually be modelling sanctions and incentives that are conditioned on whether people follow through with their actions as declared in the contract or not.
+
+### Scoping: Consensus is not the end goal. End goal is to shape reality so we like it more
+
+Furthermore, aligning on a shared virtual state may be part of the solution, but it is not the end goal. Really it is about shaping reality the way we like it, where pretty much all preceived human value is found in reality and not on some shared ledger. The bits in the network are just the means to get to a better reality.
+
+### Note: Adequate coordination mechanisms already exist, but not formalized so they can easily be managed in hypertext
+
+This system is not meant to be a replacement for existing social contracts, but rather a supplement to them. It serves as a common framework to define new and existing coordination mechanisms in, and offers an accounting infrastructure to operate organizations at a global scale.
+>>>>>>> 041d6dc62ab6eae1a91f37fb4f8d10786e949865
 
 ## Observations
 
@@ -158,6 +222,20 @@ After a delay proportional to the economic size of the deal relative to other de
 
 _Work in progress. Feel free to ask for more information._
 
+Firstly, the library of domain theories create an ever expanding surface of possible wants. Now every possible subselection of that surface can be put into a value basket. And virtually, there exists an exchange rate between every possible pair of them. Especially interesting are those value baskets that partially overlap. Consider the value basket of everything possible. Every value basket excluding some would be a subset of this. On the other hand, there are those wants for specifically 
+Now the value basket behind $ASK is that of every single active service offering on the offer book, self-categorizing themselve by specifying the actions they would do for you. Every service provider can mint vouchers for their specific service offerings according to their declared production capacity. Vouchers for individual offers are grouped together via shared matching abstraction over them, into _basket vouchers_. A basket voucher is specified by selectiong specific attributes in a service offer (production, delivery, settlement), with all active service offerings that match that selector being able to be ordered by redeeming that voucher.
+ creates this generalization-specialization notion of social credits (i.e. money).
+
+Control ratio between outstanding vouchers and active service offerings. While a secondary market for vouchers can't be prohibited, the network makes sure that the ratio between outstanding vouchers and actually available service offerings are so that production capacity typically won't be hit.
+
+$ASK is primarily backed by it's treasury, secondarily by the potential productivity of current and future service offerings. $ASK may be put up to auction to increase that treasury. That treasury is paid out according to the settlement rules of deals. It may also auction off specific vouchers to buyers that pay with regular crypto currency, which is received by the treasury. Treasury Guardians are worker bots that are paid to send transactions out of or reasury if the network needs to delivery some crypto assets. They are sent into a smart contract which further distributes it.
+
+From a service provider perspective, the treasury can be used to immediately pay bills accumulated bridges the accumulating costs during the production and delivery phase (i.e. the products path up the value chain) with the final payment of the consumer. Previously every company had to have it's own operational cash buffer, but in this scheme Ask Network can cover your upfront costs as long as there are prediction markets indicating you will end up creating valuable economic productivity (which outsources the risk to speculators).
+
+Thirdly, it service as a store of value between economic activity whichs attribution unlocks later economic consumption in the form of redeemable vouchers to a specific subset of service offerings. Each account gets a continuous fair value income stream. Pre-purchased into specialiyed vouchers according to the accounts wants. The rate of income depends on that accounts past economic activity. If it had caused successful deal deliveries it received an increas in income rate with that. There is a consensus income decay set by the economy automatically that defines every accounts decay of income stream over time, incentivizing the account owner to be productive. At each moment, there is a known voucher space thats purchasable by the account depending on its current income rate. This mechanism of income stream to ungate a surface of vouchers bridges attribution of previous production with the possibility of then later use that attribution as the payment for consumption (which is ordering an ask you want). So while the treasury subsidaries form the business perspective, this froms the consumers perspective, or the every day life interface.
+
+Fourth, it makes a distinction between an MVL (minimum viable life) and everything else. There is a network-wide consensus MVL which is a list of services that cover basic living standards every human needs to at least survive. The tokenomics make sure that this will be produced for every MVL NFT out there first prio (subject to deduplication from the social graph), with all remaining economic activity coordinated as secondary condition.
+
 Summary: A voucher economy is constructed which lets the user navigate within a generalization-specialization spectrum of productive services. On the one extreme, there is $ASK which represents a general purpose voucher for everything offerable. Users can specialize their amount of $ASK into more narrow vouchers, constraining the use of the tokens to just the service offerings that match the voucher definition. On the other extreme, we have a fully specialized voucher which is tied to a specific service offering from a specific service provider.
 
 ## User Interface
@@ -249,6 +327,29 @@ Do whatever you want, as long as everybody is cool with it: We need a verificati
 This mechanisms also serves as a identification and verification of successful-delivery% for any action plan. Considering everything we don't know which has assumed causal mechanisms the user subscribes to (=the domain models he's okay with to reason through, usually science and his own political/societal ego.
 
 Feel free to ask, look out for a response, but don't expect a change in behavior: In the sense of actions: You can ask somebody to do something or don't do something, or do something differently. They may answer to your request with counter-asks which would change their minds, although it's up to them to communicate or not. Multiple Ask-rounds essentially are direct negotiations of social coordination.
+
+## Positioning Ask Network
+
+briefly illustrate history of banking, listing problems with their causes, and the solutions that humans implemented over the time with some of them still in use today. Please mention in this order, allowing each solution one paragraph with a sentence or two:
+
+- Debt and dependence on trust
+- Bartering and double concidents of wants
+- Commodity money, mentioning barting as just a transitionary phenomenon only rarely used
+- First bank notes
+- Central banks
+- first ERMA computer
+- clearinghouse systems (automatic payments and ATM transactions)
+- SWIFT
+
+## On Inequality
+
+Also touch on how increased volume of pairwise transactions only worsens global wealth inequality, referencing _John Angle_ and the _Angle Process_.
+
+show how it eliminates most of these problems, and goes back to trusted personal ledgers and commodity money, while entering the new frontier of automatic multi-party transactions and realtime adaptive economies.
+
+show how Ask Network is the next evolution in money/banking/finance.
+
+and point to the big ecosystem of entrepreneurs creating organizations within the monetary for-profit framework, Ask Network will create a comparable spectrum of entrepreneurs who develop and operate coordination schemes.
 
 ## Theoretical Foundations
 
